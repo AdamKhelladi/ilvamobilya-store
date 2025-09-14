@@ -2,8 +2,6 @@ import { IoMdSearch } from "react-icons/io";
 import "./Navbar.css";
 import { useState } from "react";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
-import DarkMode from "../../DarkMode";
-// import DarkMode from "../DarkMode";
 
 // import { useNavigate } from "react-router-dom";
 
@@ -46,7 +44,7 @@ export default function NavBar() {
     <div className="navbar-container" id="home">
       <div className="on-left">
         <div className="logo-name">
-          <a href="#">IlvaMobilya</a>
+          <a href="#"> IlvaMobilya</a>
         </div>
         <div className="links">
           <ul className="ul-links">
@@ -113,9 +111,9 @@ export default function NavBar() {
             />
             <div className="orders">4</div>
           </button>
-          <div className="dark-mode">
+          {/* <div className="dark-mode">
             <DarkMode />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
