@@ -2,6 +2,7 @@
   /* Light theme */
   --bg-primary: #f7f7f7;
   --bg-secondary: #fff;
+  --bg-hover: #dfdfdf;
   --text-primary: #111;
   --text-secondary: #666;
   --border-color: #c7c7c7;
@@ -13,6 +14,7 @@
   /* Dark theme */
   --bg-primary: #050505;
   --bg-secondary: #111;
+  --bg-hover: #222;
   --text-primary: #ffffff;
   --text-secondary: #bcbfc4;
   --border-color: #373e4b;
