@@ -2,20 +2,21 @@ import { IoMdSearch } from "react-icons/io";
 import "./Navbar.css";
 import { useState } from "react";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
+import DarkMode from "../DarkMode";
 
 // import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const MenuLinks = [
     { id: 1, name: "Home", link: "#home" },
-    { id: 2, name: "Shop", link: "#shop" },
+    { id: 2, name: "Categories", link: "#categories" },
     { id: 3, name: "Services", link: "#services" },
-    { id: 4, name: "Blogs", link: "#blogs" },
+    { id: 4, name: "About Us", link: "#about-us" },
   ];
 
   const DropdownLinks = [
     { id: 1, name: "Trending Products", link: "#products" },
-    { id: 2, name: "Best Selling", link: "#best-selling" },
+    { id: 2, name: "Best Selling", link: "#categories" },
     { id: 3, name: "Top Rated", link: "#top-rated" },
   ];
 
@@ -44,7 +45,7 @@ export default function NavBar() {
     <div className="navbar-container" id="home">
       <div className="on-left">
         <div className="logo-name">
-          <a href="#"> IlvaMobilya</a>
+          <a href="#">IlvaMobilya</a>
         </div>
         <div className="links">
           <ul className="ul-links">
@@ -111,9 +112,9 @@ export default function NavBar() {
             />
             <div className="orders">4</div>
           </button>
-          {/* <div className="dark-mode">
+          <div className="dark-mode">
             <DarkMode />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

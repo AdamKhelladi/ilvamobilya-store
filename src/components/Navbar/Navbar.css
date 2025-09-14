@@ -14,7 +14,7 @@
 }
 
 .navbar-container .logo-name a {
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
   text-decoration: none;
   color: var(--text-primary);
@@ -34,7 +34,7 @@
 
 .navbar-container .links .ul-links a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--text-secondary);
   transition: 0.3s;
