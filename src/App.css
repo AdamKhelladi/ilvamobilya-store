@@ -59,40 +59,7 @@
   color: var(--text-primary);
 }
 
-.App .project-container {
-  /* max-width: 1200px;
-  height: 100%; */
-  margin: 0 auto;
-  /* padding: 0 20px; */
-
+.App .container {
   font-family: "Oswald", sans-serif;
   position: relative;
 }
-
-/* Media Responsive */
-
-/* @media (max-width: 1100px) {
-  .App .project-container {
-    max-width: 80%;
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 992px) {
-  .App .project-container {
-    max-width: 100%;
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .App .project-container {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .App .project-container {
-    padding: 0 12px;
-  }
-} */
