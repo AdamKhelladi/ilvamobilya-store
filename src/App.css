@@ -1,6 +1,6 @@
 :root {
   /* Light theme */
-  --accent-color: #00640d;
+  --accent-color: #00490a;
   --accent-color-hover: #003f08;
   --bg-primary: #f7f7f7;
   --bg-secondary: #fff;
@@ -24,6 +24,25 @@
   --border-color: #373e4b;
   --gradient-color-one: #424242;
   --gradient-color-two: #131313;
+}
+
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.dark .App {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.App .container {
+  font-family: "Oswald", sans-serif;
+  position: relative;
 }
 
 /* Start Global Rules */
@@ -51,21 +70,4 @@
   .container {
     width: 1170px;
   }
-}
-
-.App {
-  min-height: 100vh;
-  background-color: var(--bg-primary);
-  transition: background-color 0.3s ease;
-  overflow: hidden;
-}
-
-.dark .App {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-}
-
-.App .container {
-  font-family: "Oswald", sans-serif;
-  position: relative;
 }
