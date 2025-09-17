@@ -1,13 +1,14 @@
 :root {
   /* Light theme */
   --bg-primary: #f7f7f7;
-  --bg-secondary: #f3e4de;
+  --bg-secondary: #f3eade;
   --bg-hover: #dfdfdf;
   --text-primary: #41281d;
   --text-secondary: #8a5c48;
-  --border-color: #c4937e;
-  --gradient-color-one: #d4d4d4;
-  --gradient-color-two: #f5f5f5;
+  --p-color: #c4937e;
+  --border-color: #b4836d;
+  --gradient-color-one: #fff8f2;
+  --gradient-color-two: #dbcbb5;
 }
 
 .App {
