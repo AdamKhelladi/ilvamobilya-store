@@ -1,0 +1,77 @@
+.navbar-container {
+  background-color: var(--bg-secondary);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container .container .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-container .container .logo-name h1 {
+  font-size: 25px;
+  margin: 0;
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-container .navbar-input {
+  position: relative;
+  width: 400px;
+}
+
+.navbar-container .navbar-input input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 14px;
+  background-color: transparent;
+}
+
+.navbar-container .navbar-input .serach-icon {
+  position: absolute;
+  top: 23%;
+  right: -15px;
+  color: var(--border-color);
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-container .navbar-icon {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: .3s;
+}
+
+.navbar-icons .navbar-icon:hover {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 800px) {
+  .navbar-container .navbar-input {
+    display: none;
+  }
+  .navbar-container .container {
+    width: 100%;
+  }
+}
