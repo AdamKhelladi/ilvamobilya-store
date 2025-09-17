@@ -11,18 +11,22 @@
   align-items: center;
 }
 
-.navbar-container .container .logo-name {
+.logo-name {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.navbar-container .container .logo-name h1 {
+.logo-name h1 {
   font-size: 25px;
   margin: 0;
   color: var(--text-primary);
   cursor: pointer;
   user-select: none;
+}
+.logo-name h1 a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 .navbar-container .navbar-input {
@@ -56,22 +60,107 @@
   gap: 10px;
 }
 
-.navbar-container .navbar-icon {
+.navbar-icon {
   font-size: 25px;
   cursor: pointer;
   color: var(--text-primary);
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .navbar-icons .navbar-icon:hover {
   color: var(--text-secondary);
 }
 
+/* Strat Menu  */
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: linear-gradient(135deg, #3b2f2f8c, #8a5c48a2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.menu {
+  position: absolute;
+  top: 53%;
+  right: 80px;
+  transform: translate(0, -50%);
+  width: 350px;
+  height: 80%;
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  animation: menu-animation 0.5s ease-in-out forwards;
+}
+
+@keyframes menu-animation {
+  from {
+    transform: translate(100%, -50%);
+  }
+  to {
+    transform: translate(0, -50%);
+  }
+}
+
+.menu .menu-head {
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .menu-head .menu-close-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: 0.3s;
+}
+.menu .menu-head .menu-close-icon:hover {
+  color: var(--text-secondary);
+}
+
+.menu .menu-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.menu .menu-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #d8ad9b;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu .menu-links a:hover {
+  background-color: var(--border-color);
+}
+
+/* Media */
 @media (max-width: 800px) {
   .navbar-container .navbar-input {
     display: none;
   }
   .navbar-container .container {
     width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .menu {
+    right: 20px;
   }
 }
