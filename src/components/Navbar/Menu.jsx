@@ -29,7 +29,7 @@ export default function Menu({ handleShowMenu }) {
         </div>
         <div className="menu-links">
           {MenuLinks.map((item) => (
-            <a key={item.id} href={item.link}>
+            <a key={item.id} href={item.link} onClick={handleShowMenu}>
               {item.name}
             </a>
           ))}
