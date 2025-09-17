@@ -1,7 +1,7 @@
 :root {
   /* Light theme */
-  --accent-color: #00490a;
-  --accent-color-hover: #003f08;
+  --main-color: #00490a;
+  --secondary-color: #003f08;
   --bg-primary: #f7f7f7;
   --bg-secondary: #fff;
   --bg-hover: #dfdfdf;
@@ -12,32 +12,12 @@
   --gradient-color-two: #f5f5f5;
 }
 
-.dark {
-  /* Dark theme */
-  --accent-color: #00640d;
-  --accent-color-hover: #003f08;
-  --bg-primary: #050505;
-  --bg-secondary: #111;
-  --bg-hover: #222;
-  --text-primary: #ffffff;
-  --text-secondary: #bcbfc4;
-  --border-color: #373e4b;
-  --gradient-color-one: #424242;
-  --gradient-color-two: #131313;
-}
-
-
 .App {
   min-height: 100vh;
   background-color: var(--bg-primary);
   transition: background-color 0.3s ease;
   overflow: hidden;
   position: relative;
-}
-
-.dark .App {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
 }
 
 .App .container {
