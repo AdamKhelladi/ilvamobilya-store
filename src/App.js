@@ -5,6 +5,7 @@ import Menu from "./components/Navbar/Menu";
 import Hero from "./components/Hero/Hero";
 import Categories from "./components/Categories/Categories";
 import Services from "./components/Services/Services";
+import About from "./components/About/About";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -29,6 +30,7 @@ function App() {
 
       <div className="container">
         <Hero />
+        <About />
         <Services />
         <Categories />
       </div>

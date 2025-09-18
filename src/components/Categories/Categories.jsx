@@ -22,7 +22,7 @@ export default function Categories() {
     {
       id: 3,
       title: "Tables",
-      type: "+7 MODELS",
+      type: "+10 MODELS",
       description:
         "Available in different shapes and finishes to suit your style.",
       img: Image3,
