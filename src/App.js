@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { useState } from "react";
 import Menu from "./components/Navbar/Menu";
 import Hero from "./components/Hero/Hero";
+import Categories from "./components/Categories/Categories";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,6 +19,7 @@ function App() {
 
       <div className="container">
         <Hero />
+        <Categories />
       </div>
     </div>
   );
