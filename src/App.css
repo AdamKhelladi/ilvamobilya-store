@@ -24,6 +24,11 @@
   position: relative;
 }
 
+::selection {
+  background: var(--text-primary); /* background color */
+  color: #fff;         /* text color */
+}
+
 /* Start Global Rules */
 .container {
   padding-left: 15px;
