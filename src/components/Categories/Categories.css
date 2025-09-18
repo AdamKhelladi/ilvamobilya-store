@@ -1,5 +1,7 @@
 .categories-container {
-  height: 100vh;
+  /* height: 100vh; */
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,8 +123,6 @@
 @media (max-width: 750px) {
   .categories-container {
     height: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px;
   }
   .categories-container .items {
     display: flex;

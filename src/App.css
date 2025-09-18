@@ -16,7 +16,7 @@
   background-color: var(--bg-primary);
   transition: background-color 0.3s ease;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 
 .App .container {
