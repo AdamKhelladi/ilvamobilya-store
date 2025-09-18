@@ -8,31 +8,29 @@ export default function Categories() {
     {
       id: 1,
       title: "Dining Table Chair",
-      type: "+5 TYPES",
-      description:
-        "Available in several models: 4 chairs and 6 chairs. Chair color of your choice.",
+      type: "+5 MODELS",
+      description: "Available in several models.",
       img: Image1,
     },
     {
       id: 2,
       title: "Sofas",
-      type: "+20 TYPES",
-      description:
-        "Available in several models: 2-seater, 3-seater, and corner sofa. Sofa color and material (fabric or leather) of your choice.",
+      type: "+20 MODELS",
+      description: "Available in several models.",
       img: Image2,
     },
     {
       id: 3,
       title: "Tables",
-      type: "+7 TYPES",
+      type: "+7 MODELS",
       description:
-        "Elegant wooden coffee table designed to match your sofa. Available in different shapes and finishes to suit your style.",
+        "Available in different shapes and finishes to suit your style.",
       img: Image3,
     },
   ];
 
   return (
-    <div className="categories-container">
+    <div className="categories-container" id="categories">
       <div className="items">
         {categoryData.map((item) => (
           <div
@@ -44,9 +42,7 @@ export default function Categories() {
               <h1>{item.title}</h1>
               <p>{item.description}</p>
             </div>
-            <div className="category-img">
-              <img className={`img-${item.id}`} src={item.img} alt={item.title} />
-            </div>
+            <img className={`img-${item.id}`} src={item.img} alt={item.title} />
           </div>
         ))}
       </div>

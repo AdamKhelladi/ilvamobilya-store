@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  font-family: "Poppins", "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
