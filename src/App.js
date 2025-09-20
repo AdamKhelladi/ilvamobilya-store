@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import Categories from "./components/Categories/Categories";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
+import Products from "./components/Products/Products";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,6 +34,7 @@ function App() {
         <About />
         <Services />
         <Categories />
+        <Products />
       </div>
     </div>
   );
