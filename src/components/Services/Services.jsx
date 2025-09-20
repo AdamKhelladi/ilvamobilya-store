@@ -13,19 +13,19 @@ export default function Services() {
       description: "Free shipping on all orders across the country.",
     },
     {
-      id: 1,
+      id: 2,
       icon: <CiMoneyCheck1 />,
       title: "CASH ON DELIVERY",
       description: "Pay easily at your doorstep with our cash on delivery option.",
     },
     {
-      id: 1,
+      id: 3,
       icon: <GoGift />,
       title: "GIFT CARDS",
       description: "Buy gift cards and use coupon codes easily.",
     },
     {
-      id: 1,
+      id: 4,
       icon: <LiaTelegramPlane />,
       title: "CONTACT US",
       description: "Keep in touch.",
