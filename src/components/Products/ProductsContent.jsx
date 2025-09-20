@@ -1,6 +1,8 @@
 import "./Products.css";
 
 import { FaStar } from "react-icons/fa6";
+import { MdOutlineReadMore } from "react-icons/md";
+import { IoCartOutline } from "react-icons/io5";
 
 export default function ProductsContent({ sofasContentData }) {
   return (
@@ -12,7 +14,7 @@ export default function ProductsContent({ sofasContentData }) {
           </div>
           <div className="item-content">
             <div className="stars-rate">
-              <p>Sofa Furniture</p>
+              <p>{item.category}</p>
               <div className="rate">
                 <div className="star">
                   <FaStar />
@@ -20,15 +22,15 @@ export default function ProductsContent({ sofasContentData }) {
                 <span>{item.rate}</span>
               </div>
             </div>
-            <h3>{item.name}</h3>
-            <p>{item.price}</p>
-            <div className="item-btns">
-              <button>
-                <a href="#">Add to cart</a>
-              </button>
-              <button>
-                <a href="#">Details</a>
-              </button>
+            <div className="content">
+              <div>
+                <h3>{item.name}</h3>
+                <p>{item.price}</p>
+              </div>
+              <div className="item-btns">
+                <MdOutlineReadMore className="btn" />
+                <IoCartOutline className="btn" />
+              </div>
             </div>
           </div>
         </div>

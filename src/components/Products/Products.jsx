@@ -35,7 +35,7 @@ const productsCategoriesData = [
   },
   {
     id: 2,
-    name: "Mini Tables",
+    name: "Coffee Tables",
     img: categoryImg2,
   },
   {
@@ -46,27 +46,28 @@ const productsCategoriesData = [
 ];
 
 const sofasContentData = [
-  { id: 1, name: "L Arion", price: "70,000 DA", img: image1, rate: "4.8" },
-  { id: 2, name: "L Alven", price: "100,000 DA", img: image2, rate: "4.3" },
-  { id: 3, name: "L Arko", price: "60,000 DA", img: image3, rate: "4.6" },
-  { id: 4, name: "Lorene", price: "120,000 DA", img: image4, rate: "4.9" },
-  { id: 5, name: "L Jero", price: "110,000 DA", img: image5, rate: "4.2" },
-  { id: 6, name: "L Cornel", price: "60,000 DA", img: image6, rate: "4.7" },
-  { id: 7, name: "L Loriva", price: "70,000 DA", img: image7, rate: "4.4" },
-  { id: 8, name: "Evada", price: "70,000 DA", img: image8, rate: "4.1" },
-  { id: 9, name: "Viron", price: "70,000 DA", img: image9, rate: "4.5" },
-  { id: 10, name: "Classique", price: "70,000 DA", img: image10, rate: "4.8" },
-  { id: 11, name: "L Maxwel", price: "70,000 DA", img: image11, rate: "4.6" },
-  { id: 12, name: "Arena", price: "70,000 DA", img: image12, rate: "4.3" },
-  { id: 13, name: "L Arena", price: "70,000 DA", img: image13, rate: "4.7" },
-  { id: 14, name: "Kamille", price: "70,000 DA", img: image14, rate: "4.5" },
-  { id: 15, name: "Panda", price: "70,000 DA", img: image15, rate: "4.9" },
-  { id: 16, name: "L Ropose", price: "70,000 DA", img: image16, rate: "4.2" },
-  { id: 17, name: "L Panda", price: "70,000 DA", img: image17, rate: "4.4" },
-  { id: 18, name: "Mira", price: "70,000 DA", img: image18, rate: "4.6" },
-  { id: 19, name: "Bubly", price: "70,000 DA", img: image19, rate: "4.1" },
-  { id: 20, name: "Fendi", price: "70,000 DA", img: image20, rate: "4.8" },
+  { id: 1, name: "L Arion", price: "70,000 DA", img: image1, rate: "4.8", category: "Sofa Furniture" },
+  { id: 2, name: "L Alven", price: "100,000 DA", img: image2, rate: "4.3", category: "Sofa Furniture" },
+  { id: 3, name: "L Arko", price: "60,000 DA", img: image3, rate: "4.6", category: "Sofa Furniture" },
+  { id: 4, name: "Lorene", price: "120,000 DA", img: image4, rate: "4.9", category: "Sofa Furniture" },
+  { id: 5, name: "L Jero", price: "110,000 DA", img: image5, rate: "4.2", category: "Sofa Furniture" },
+  { id: 6, name: "L Cornel", price: "60,000 DA", img: image6, rate: "4.7", category: "Sofa Furniture" },
+  { id: 7, name: "L Loriva", price: "70,000 DA", img: image7, rate: "4.4", category: "Sofa Furniture" },
+  { id: 8, name: "Evada", price: "70,000 DA", img: image8, rate: "4.1", category: "Sofa Furniture" },
+  { id: 9, name: "Viron", price: "70,000 DA", img: image9, rate: "4.5", category: "Sofa Furniture" },
+  { id: 10, name: "Classique", price: "70,000 DA", img: image10, rate: "4.8", category: "Sofa Furniture" },
+  { id: 11, name: "L Maxwel", price: "70,000 DA", img: image11, rate: "4.6", category: "Sofa Furniture" },
+  { id: 12, name: "Arena", price: "70,000 DA", img: image12, rate: "4.3", category: "Sofa Furniture" },
+  { id: 13, name: "L Arena", price: "70,000 DA", img: image13, rate: "4.7", category: "Sofa Furniture" },
+  { id: 14, name: "Kamille", price: "70,000 DA", img: image14, rate: "4.5", category: "Sofa Furniture" },
+  { id: 15, name: "Panda", price: "70,000 DA", img: image15, rate: "4.9", category: "Sofa Furniture" },
+  { id: 16, name: "L Ropose", price: "70,000 DA", img: image16, rate: "4.2", category: "Sofa Furniture" },
+  { id: 17, name: "L Panda", price: "70,000 DA", img: image17, rate: "4.4", category: "Sofa Furniture" },
+  { id: 18, name: "Mira", price: "70,000 DA", img: image18, rate: "4.6", category: "Sofa Furniture" },
+  { id: 19, name: "Bubly", price: "70,000 DA", img: image19, rate: "4.1", category: "Sofa Furniture" },
+  { id: 20, name: "Fendi", price: "70,000 DA", img: image20, rate: "4.8", category: "Sofa Furniture" },
 ];
+
 
 export default function Products() {
   const [categorySelected, setCategorySelected] = useState("Sofas");
@@ -76,13 +77,13 @@ export default function Products() {
   }
 
   return (
-    <div className="products-container">
+    <div className="products-container" id="products">
       <h1>Our Products</h1>
       <div className="products-categories">
         {productsCategoriesData.map((item) => (
           <div
             key={item.id}
-            className={`category category-${item.id}`}
+            className={item.name === categorySelected ? "category categorySelected" : "category"}
             onClick={() => {
               handleClickCategory(item.name);
             }}
@@ -95,7 +96,7 @@ export default function Products() {
       <div className="product-content">
         {categorySelected === "Sofas" ? (
           <ProductsContent sofasContentData={sofasContentData} />
-        ) : categorySelected === "Mini Tables" ? (
+        ) : categorySelected === "Coffee Tables" ? (
           <div className="mini-table-content">Mini Table Content</div>
         ) : (
           <div className="dining-table-content">Dining Table Content</div>
