@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa6";
 import { MdOutlineReadMore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 
-export default function ProductsContent({ sofasContentData }) {
+export default function ProductsContent({ contentData }) {
   return (
     <div className="sofa-content">
-      {sofasContentData.map((item) => (
+      {contentData.map((item) => (
         <div key={item.id} className="item">
           <div className="item-img">
             <img src={item.img} />

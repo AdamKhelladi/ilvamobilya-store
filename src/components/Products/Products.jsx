@@ -6,26 +6,48 @@ import { useState } from "react";
 import ProductsContent from "./ProductsContent";
 
 // Sofas images
-import image1 from "../../assets/products/SofasModels/model-1.jpg";
-import image2 from "../../assets/products/SofasModels/model-2.jpg";
-import image3 from "../../assets/products/SofasModels/model-3.jpg";
-import image4 from "../../assets/products/SofasModels/model-4.jpg";
-import image5 from "../../assets/products/SofasModels/model-5.jpg";
-import image6 from "../../assets/products/SofasModels/model-6.jpg";
-import image7 from "../../assets/products/SofasModels/model-7.jpg";
-import image8 from "../../assets/products/SofasModels/model-8.jpg";
-import image9 from "../../assets/products/SofasModels/model-9.jpg";
-import image10 from "../../assets/products/SofasModels/model-10.jpg";
-import image11 from "../../assets/products/SofasModels/model-11.jpg";
-import image12 from "../../assets/products/SofasModels/model-12.jpg";
-import image13 from "../../assets/products/SofasModels/model-13.jpg";
-import image14 from "../../assets/products/SofasModels/model-14.jpg";
-import image15 from "../../assets/products/SofasModels/model-15.jpg";
-import image16 from "../../assets/products/SofasModels/model-16.jpg";
-import image17 from "../../assets/products/SofasModels/model-17.jpg";
-import image18 from "../../assets/products/SofasModels/model-18.jpg";
-import image19 from "../../assets/products/SofasModels/model-19.jpg";
-import image20 from "../../assets/products/SofasModels/model-20.jpg";
+import sofaImage1 from "../../assets/products/SofasModels/model-1.jpg";
+import sofaImage2 from "../../assets/products/SofasModels/model-2.jpg";
+import sofaImage3 from "../../assets/products/SofasModels/model-3.jpg";
+import sofaImage4 from "../../assets/products/SofasModels/model-4.jpg";
+import sofaImage5 from "../../assets/products/SofasModels/model-5.jpg";
+import sofaImage6 from "../../assets/products/SofasModels/model-6.jpg";
+import sofaImage7 from "../../assets/products/SofasModels/model-7.jpg";
+import sofaImage8 from "../../assets/products/SofasModels/model-8.jpg";
+import sofaImage9 from "../../assets/products/SofasModels/model-9.jpg";
+import sofaImage10 from "../../assets/products/SofasModels/model-10.jpg";
+import sofaImage11 from "../../assets/products/SofasModels/model-11.jpg";
+import sofaImage12 from "../../assets/products/SofasModels/model-12.jpg";
+import sofaImage13 from "../../assets/products/SofasModels/model-13.jpg";
+import sofaImage14 from "../../assets/products/SofasModels/model-14.jpg";
+import sofaImage15 from "../../assets/products/SofasModels/model-15.jpg";
+import sofaImage16 from "../../assets/products/SofasModels/model-16.jpg";
+import sofaImage17 from "../../assets/products/SofasModels/model-17.jpg";
+import sofaImage18 from "../../assets/products/SofasModels/model-18.jpg";
+import sofaImage19 from "../../assets/products/SofasModels/model-19.jpg";
+import sofaImage20 from "../../assets/products/SofasModels/model-20.jpg";
+
+// Coffee tables images
+import coffeeTableImage1 from "../../assets/products/CoffeeTableModels/model-1.jpg";
+import coffeeTableImage2 from "../../assets/products/CoffeeTableModels/model-2.jpg";
+import coffeeTableImage3 from "../../assets/products/CoffeeTableModels/model-3.jpg";
+import coffeeTableImage4 from "../../assets/products/CoffeeTableModels/model-4.jpg";
+import coffeeTableImage5 from "../../assets/products/CoffeeTableModels/model-5.jpg";
+import coffeeTableImage6 from "../../assets/products/CoffeeTableModels/model-6.jpg";
+import coffeeTableImage7 from "../../assets/products/CoffeeTableModels/model-7.jpg";
+import coffeeTableImage8 from "../../assets/products/CoffeeTableModels/model-8.jpg";
+import coffeeTableImage9 from "../../assets/products/CoffeeTableModels/model-9.jpg";
+import coffeeTableImage10 from "../../assets/products/CoffeeTableModels/model-10.jpg";
+import coffeeTableImage11 from "../../assets/products/CoffeeTableModels/model-11.jpg";
+import coffeeTableImage12 from "../../assets/products/CoffeeTableModels/model-12.jpg";
+
+// Dining tables images
+import diningTableImage1 from "../../assets/products/DiningTableModels/model-1.jpg";
+import diningTableImage2 from "../../assets/products/DiningTableModels/model-2.jpg";
+import diningTableImage3 from "../../assets/products/DiningTableModels/model-3.jpg";
+import diningTableImage4 from "../../assets/products/DiningTableModels/model-4.jpg";
+import diningTableImage5 from "../../assets/products/DiningTableModels/model-5.jpg";
+
 
 const productsCategoriesData = [
   {
@@ -45,27 +67,42 @@ const productsCategoriesData = [
   },
 ];
 
-const sofasContentData = [
-  { id: 1, name: "L Arion", price: "70,000 DA", img: image1, rate: "4.8", category: "Sofa Furniture" },
-  { id: 2, name: "L Alven", price: "100,000 DA", img: image2, rate: "4.3", category: "Sofa Furniture" },
-  { id: 3, name: "L Arko", price: "60,000 DA", img: image3, rate: "4.6", category: "Sofa Furniture" },
-  { id: 4, name: "Lorene", price: "120,000 DA", img: image4, rate: "4.9", category: "Sofa Furniture" },
-  { id: 5, name: "L Jero", price: "110,000 DA", img: image5, rate: "4.2", category: "Sofa Furniture" },
-  { id: 6, name: "L Cornel", price: "60,000 DA", img: image6, rate: "4.7", category: "Sofa Furniture" },
-  { id: 7, name: "L Loriva", price: "70,000 DA", img: image7, rate: "4.4", category: "Sofa Furniture" },
-  { id: 8, name: "Evada", price: "70,000 DA", img: image8, rate: "4.1", category: "Sofa Furniture" },
-  { id: 9, name: "Viron", price: "70,000 DA", img: image9, rate: "4.5", category: "Sofa Furniture" },
-  { id: 10, name: "Classique", price: "70,000 DA", img: image10, rate: "4.8", category: "Sofa Furniture" },
-  { id: 11, name: "L Maxwel", price: "70,000 DA", img: image11, rate: "4.6", category: "Sofa Furniture" },
-  { id: 12, name: "Arena", price: "70,000 DA", img: image12, rate: "4.3", category: "Sofa Furniture" },
-  { id: 13, name: "L Arena", price: "70,000 DA", img: image13, rate: "4.7", category: "Sofa Furniture" },
-  { id: 14, name: "Kamille", price: "70,000 DA", img: image14, rate: "4.5", category: "Sofa Furniture" },
-  { id: 15, name: "Panda", price: "70,000 DA", img: image15, rate: "4.9", category: "Sofa Furniture" },
-  { id: 16, name: "L Ropose", price: "70,000 DA", img: image16, rate: "4.2", category: "Sofa Furniture" },
-  { id: 17, name: "L Panda", price: "70,000 DA", img: image17, rate: "4.4", category: "Sofa Furniture" },
-  { id: 18, name: "Mira", price: "70,000 DA", img: image18, rate: "4.6", category: "Sofa Furniture" },
-  { id: 19, name: "Bubly", price: "70,000 DA", img: image19, rate: "4.1", category: "Sofa Furniture" },
-  { id: 20, name: "Fendi", price: "70,000 DA", img: image20, rate: "4.8", category: "Sofa Furniture" },
+const sofasData = [
+  { id: 1, name: "L Arion", price: "70,000 DA", img: sofaImage1, rate: "4.8", category: "Sofa Furniture" },
+  { id: 2, name: "L Alven", price: "100,000 DA", img: sofaImage2, rate: "4.3", category: "Sofa Furniture" },
+  { id: 3, name: "L Arko", price: "60,000 DA", img: sofaImage3, rate: "4.6", category: "Sofa Furniture" },
+  { id: 4, name: "Lorene", price: "120,000 DA", img: sofaImage4, rate: "4.9", category: "Sofa Furniture" },
+  { id: 5, name: "L Jero", price: "110,000 DA", img: sofaImage5, rate: "4.2", category: "Sofa Furniture" },
+  { id: 6, name: "L Cornel", price: "60,000 DA", img: sofaImage6, rate: "4.7", category: "Sofa Furniture" },
+  { id: 7, name: "L Loriva", price: "70,000 DA", img: sofaImage7, rate: "4.4", category: "Sofa Furniture" },
+  { id: 8, name: "Evada", price: "70,000 DA", img: sofaImage8, rate: "4.1", category: "Sofa Furniture" },
+  { id: 9, name: "Viron", price: "70,000 DA", img: sofaImage9, rate: "4.5", category: "Sofa Furniture" },
+  { id: 10, name: "Classique", price: "70,000 DA", img: sofaImage10, rate: "4.8", category: "Sofa Furniture" },
+  { id: 11, name: "L Maxwel", price: "70,000 DA", img: sofaImage11, rate: "4.6", category: "Sofa Furniture" },
+  { id: 12, name: "Arena", price: "70,000 DA", img: sofaImage12, rate: "4.3", category: "Sofa Furniture" },
+  { id: 13, name: "L Arena", price: "70,000 DA", img: sofaImage13, rate: "4.7", category: "Sofa Furniture" },
+  { id: 14, name: "Kamille", price: "70,000 DA", img: sofaImage14, rate: "4.5", category: "Sofa Furniture" },
+  { id: 15, name: "Panda", price: "70,000 DA", img: sofaImage15, rate: "4.9", category: "Sofa Furniture" },
+  { id: 16, name: "L Ropose", price: "70,000 DA", img: sofaImage16, rate: "4.2", category: "Sofa Furniture" },
+  { id: 17, name: "L Panda", price: "70,000 DA", img: sofaImage17, rate: "4.4", category: "Sofa Furniture" },
+  { id: 18, name: "Mira", price: "70,000 DA", img: sofaImage18, rate: "4.6", category: "Sofa Furniture" },
+  { id: 19, name: "Bubly", price: "70,000 DA", img: sofaImage19, rate: "4.1", category: "Sofa Furniture" },
+  { id: 20, name: "Fendi", price: "70,000 DA", img: sofaImage20, rate: "4.8", category: "Sofa Furniture" },
+];
+
+const coffeeTablesData = [
+  { id: 1, name: "MDF Luxury Marble", price: "20,000 DA", img: coffeeTableImage1, rate: "4.8", category: "Coffee Table" },
+  { id: 2, name: "Rounded wooden", price: "10,000 DA", img: coffeeTableImage2, rate: "4.2", category: "Coffee Table" },
+  { id: 3, name: "Rounded wooden", price: "10,000 DA", img: coffeeTableImage3, rate: "4.6", category: "Coffee Table" },
+  { id: 4, name: "Classic Oak", price: "12,000 DA", img: coffeeTableImage4, rate: "4.3", category: "Coffee Table" },
+  { id: 5, name: "MDF Luxury Marble", price: "20,000 DA", img: coffeeTableImage5, rate: "4.9", category: "Coffee Table" },
+  { id: 6, name: "Rounded wooden", price: "10,000 DA", img: coffeeTableImage6, rate: "4.1", category: "Coffee Table" },
+  { id: 7, name: "Rounded wooden", price: "10,000 DA", img: coffeeTableImage7, rate: "4.7", category: "Coffee Table" },
+  { id: 8, name: "MDF Luxury Marble", price: "20,000 DA", img: coffeeTableImage8, rate: "4.4", category: "Coffee Table" },
+  { id: 9, name: "Luxury Marble", price: "120,000 DA", img: coffeeTableImage9, rate: "4.5", category: "Coffee Table" },
+  { id: 10, name: "Glass Top", price: "22,000 DA", img: coffeeTableImage10, rate: "4.0", category: "Coffee Table" },
+  { id: 11, name: "MDF Luxury Marble", price: "20,000 DA", img: coffeeTableImage11, rate: "4.6", category: "Coffee Table" },
+  { id: 12, name: "Glass Top", price: "15,000 DA", img: coffeeTableImage12, rate: "4.3", category: "Coffee Table" },
 ];
 
 
@@ -95,9 +132,9 @@ export default function Products() {
       </div>
       <div className="product-content">
         {categorySelected === "Sofas" ? (
-          <ProductsContent sofasContentData={sofasContentData} />
+          <ProductsContent contentData={sofasData} />
         ) : categorySelected === "Coffee Tables" ? (
-          <div className="mini-table-content">Mini Table Content</div>
+          <ProductsContent contentData={coffeeTablesData} />
         ) : (
           <div className="dining-table-content">Dining Table Content</div>
         )}
