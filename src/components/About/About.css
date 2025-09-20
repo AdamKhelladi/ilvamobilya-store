@@ -90,7 +90,8 @@
   }
   .about-img-phone {
     display: block;
-    width: 350px;
+    width: 100%;
+    min-width: 300px;
     border-radius: 10px;
   }
 }

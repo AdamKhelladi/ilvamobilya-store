@@ -1,6 +1,6 @@
 import "./About.css";
 import Image from "../../assets/about/about-img.jpg";
-import Image2 from "../../assets/about/about-img-phone-2.jpg";
+import Image2 from "../../assets/about/about-img-phone-3.jpg";
 
 export default function About() {
   return (
