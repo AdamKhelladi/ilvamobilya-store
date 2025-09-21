@@ -7,6 +7,9 @@ import Categories from "./components/Categories/Categories";
 import Services from "./components/Services/Services";
 import About from "./components/About/About";
 import Products from "./components/Products/Products";
+import ProductDetails from "./components/Products/ProductDetails";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,20 +26,31 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Navbar handleShowMenu={handleShowMenu} />
-      {showMenu ? (
-        <Menu handleShowMenu={handleShowMenu} showMenu={showMenu} />
-      ) : null}
+    <Router>
+      <div className="App">
+        <Navbar handleShowMenu={handleShowMenu} />
+        {showMenu ? (
+          <Menu handleShowMenu={handleShowMenu} showMenu={showMenu} />
+        ) : null}
 
-      <div className="container">
-        <Hero />
-        <About />
-        <Services />
-        <Categories />
-        <Products />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="container">
+                <Hero />
+                <About />
+                <Services />
+                <Categories />
+                <Products />
+              </div>
+            }
+          ></Route>
+
+          <Route path="/product/:id" element={<ProductDetails />}></Route>
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

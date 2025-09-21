@@ -4,10 +4,11 @@ import { FaStar } from "react-icons/fa6";
 import { MdOutlineReadMore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
-import ProductDetails from "./ProductDetails";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductsContent({ contentData }) {
   const [showAll, setShowAll] = useState(false);
+  const navigate = useNavigate();
 
   let displayedProducts = showAll ? contentData : contentData.slice(0, 6);
 
@@ -15,8 +16,12 @@ export default function ProductsContent({ contentData }) {
     setShowAll(true);
   }
 
+  function handleClickDetails(currentItem) {
+    navigate(`/product/${currentItem.id}`, {state: currentItem})
+  }
+
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <div className="product-content">
         {displayedProducts.map((item) => (
           <div key={item.id} className="item">
@@ -39,21 +44,25 @@ export default function ProductsContent({ contentData }) {
                   <p>{item.price}</p>
                 </div>
                 <div className="item-btns">
-                  <MdOutlineReadMore className="btn" />
+                  <MdOutlineReadMore
+                    className="btn"
+                    onClick={() => {
+                      handleClickDetails(item);
+                    }}
+                  />
                   <IoCartOutline className="btn" />
                 </div>
               </div>
             </div>
-
-            <ProductDetails item={item}/>
           </div>
         ))}
       </div>
+
       {!showAll ? (
         <button className="show-all" onClick={handleClickShowAll}>
           Show all products
         </button>
       ) : null}
-    </>
+    </div>
   );
 }
