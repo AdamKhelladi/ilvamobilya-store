@@ -399,7 +399,7 @@ export default function Products() {
           </div>
         ))}
       </div>
-      <div className="product-content">
+      <div className="products-content">
         {categorySelected === "Sofas" ? (
           <ProductsContent contentData={sofasData} />
         ) : categorySelected === "Coffee Tables" ? (

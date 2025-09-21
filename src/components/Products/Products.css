@@ -89,62 +89,62 @@
 
 /* ----- */
 
-.product-content {
+.products-content {
   margin-top: 50px;
 }
 
-.product-content .sofa-content {
+.products-content .product-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.product-content .sofa-content .item {
+.products-content .product-content .item {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 16px;
   overflow: hidden;
 }
 
-.product-content .sofa-content .item .item-content {
+.products-content .product-content .item .item-content {
   padding: 5px 20px 20px;
 }
 
-.product-content .sofa-content .item .item-content .stars-rate {
+.products-content .product-content .item .item-content .stars-rate {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.product-content .sofa-content .item .item-content .stars-rate > p {
+.products-content .product-content .item .item-content .stars-rate > p {
   color: #747474;
   margin: 0;
   font-size: 15px;
 }
 
-.product-content .sofa-content .item .item-content .stars-rate .rate {
+.products-content .product-content .item .item-content .stars-rate .rate {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.product-content .sofa-content .item .item-content .stars-rate .rate span {
+.products-content .product-content .item .item-content .stars-rate .rate span {
   font-size: 18px;
   color: var(--text-primary);
 }
 
-.product-content .sofa-content .item .item-content .stars-rate .rate .star {
+.products-content .product-content .item .item-content .stars-rate .rate .star {
   color: #ffc400;
 }
 
-.product-content .sofa-content .item .item-content .content {
+.products-content .product-content .item .item-content .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.product-content .sofa-content .item .item-content h3 {
+.products-content .product-content .item .item-content h3 {
   font-size: 27px;
   font-weight: 800;
   color: var(--text-primary);
@@ -152,35 +152,35 @@
   margin: 0;
 }
 
-.product-content .sofa-content .item .item-content p {
+.products-content .product-content .item .item-content p {
   margin: 5px 0 0;
   font-size: 20px;
   font-weight: 400;
   color: var(--text-secondary);
 }
 
-.product-content .sofa-content .item .item-img {
+.products-content .product-content .item .item-img {
   width: 100%;
   overflow: hidden;
 }
 
-.product-content .sofa-content .item .item-img img {
+.products-content .product-content .item .item-img img {
   width: 100%;
   transition: 0.5s;
 }
-.product-content .sofa-content .item:hover .item-img img {
+.products-content .product-content .item:hover .item-img img {
   transform: scale(1.05);
   filter: brightness(0.8) contrast(1.1) saturate(1.2);
 }
 
-.product-content .sofa-content .item .item-btns {
+.products-content .product-content .item .item-btns {
   margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.product-content .sofa-content .item .item-btns .btn {
+.products-content .product-content .item .item-btns .btn {
   font-size: 25px;
   color: white;
   background-color: var(--text-primary);
@@ -189,29 +189,20 @@
   cursor: pointer;
   transition: .3s;
 }
-.product-content .sofa-content .item .item-btns .btn:hover {
+.products-content .product-content .item .item-btns .btn:hover {
   transform: translateY(-2px);
 }
 
-/* .product-content .sofa-content .item .item-btns button {
+.show-all {
   border: none;
   outline: none;
-  padding: 6px 25px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, var(--border-color), var(--text-primary));
-  background-size: 200%;
-  background-position: left;
-  font-size: 18px;
-  font-weight: 500;
+  margin: 10px auto;
+  color: var(--text-primary);
+  text-decoration: underline;
+  display: block;
   cursor: pointer;
-  transition: background-position 0.3s ease, transform 0.3s ease;
+  transition: .3s;
 }
-.product-content .sofa-content .item .item-btns button:hover {
-  background-position: right;
-  color: #fff;
-  transform: scale(1.02);
+.show-all:hover {
+  color: var(--text-secondary);
 }
-.product-content .sofa-content .item .item-btns button a {
-  text-decoration: none;
-  color: #fff;
-} */
