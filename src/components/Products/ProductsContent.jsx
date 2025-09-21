@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa6";
 import { MdOutlineReadMore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
+import ProductDetails from "./ProductDetails";
 
 export default function ProductsContent({ contentData }) {
   const [showAll, setShowAll] = useState(false);
@@ -43,6 +44,8 @@ export default function ProductsContent({ contentData }) {
                 </div>
               </div>
             </div>
+
+            <ProductDetails item={item}/>
           </div>
         ))}
       </div>

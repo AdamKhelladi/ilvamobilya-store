@@ -74,6 +74,9 @@ const sofasData = [
     img: sofaImage1,
     rate: "4.8",
     category: "Sofa Furniture",
+    description:
+      "✅ Data separation: categories, sofas, coffee tables, dining tables are well-structured in arrays.✅ Scalable: easy to add more categories or products without touching logic.✅ Reusable: <ProductsContent /> handles rendering dynamically.✅ State management: simple and clear useState with handleClickCategory.✅ Readable: clear naming (sofasData, coffeeTablesData …).",
+    link: "www.facbook.com/ilvamobilya"
   },
   {
     id: 2,
