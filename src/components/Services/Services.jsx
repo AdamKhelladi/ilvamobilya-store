@@ -1,7 +1,7 @@
 import "./Services.css";
 import { FiTruck } from "react-icons/fi";
 import { CiMoneyCheck1 } from "react-icons/ci";
-import { GoGift } from "react-icons/go";
+import { MdOutlineSupportAgent } from "react-icons/md";
 import { LiaTelegramPlane } from "react-icons/lia";
 
 export default function Services() {
@@ -20,9 +20,9 @@ export default function Services() {
     },
     {
       id: 3,
-      icon: <GoGift />,
-      title: "GIFT CARDS",
-      description: "Buy gift cards and use coupon codes easily.",
+      icon: <MdOutlineSupportAgent />,
+      title: "24 / 7 Support",
+      description: "Get help anytime with our 24/7 support team.",
     },
     {
       id: 4,
