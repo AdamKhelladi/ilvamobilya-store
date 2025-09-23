@@ -22,8 +22,11 @@ export default function Navbar({ handleShowMenu }) {
           <FaSearch className="serach-icon" />
         </div>
         <div className="navbar-icons">
-          <RxHamburgerMenu className="navbar-icon" onClick={handleShowMenu}/>
-          <IoCartOutline className="navbar-icon" />
+          <RxHamburgerMenu className="navbar-icon" onClick={handleShowMenu} />
+          <div className="cart-icon">
+            <IoCartOutline className="navbar-icon" />
+            <span>4</span>
+          </div>
           <IoPersonOutline className="navbar-icon" />
         </div>
       </div>
