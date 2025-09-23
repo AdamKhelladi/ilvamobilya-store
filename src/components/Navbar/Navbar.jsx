@@ -5,7 +5,15 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCartOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Navbar({ handleShowMenu }) {
+  let navigate = useNavigate();
+
+  function handleClickCartBtn() {
+    navigate("/cart");
+  }
+
   return (
     <div className="navbar-container">
       <div className="container">
@@ -24,7 +32,7 @@ export default function Navbar({ handleShowMenu }) {
         <div className="navbar-icons">
           <RxHamburgerMenu className="navbar-icon" onClick={handleShowMenu} />
           <div className="cart-icon">
-            <IoCartOutline className="navbar-icon" />
+            <IoCartOutline className="navbar-icon" onClick={handleClickCartBtn}/>
             <span>4</span>
           </div>
           <IoPersonOutline className="navbar-icon" />

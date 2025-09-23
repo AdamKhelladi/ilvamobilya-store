@@ -10,6 +10,7 @@ import Products from "./components/Products/Products";
 import ProductDetails from "./components/Products/ProductDetails";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -48,6 +49,8 @@ function App() {
           ></Route>
 
           <Route path="/product/:id" element={<ProductDetails />}></Route>
+
+          <Route path="/cart" element={<Cart />}></Route>
         </Routes>
       </div>
     </Router>
