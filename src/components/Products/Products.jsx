@@ -69,12 +69,12 @@ const productsCategoriesData = [
 const sofasData = [
   {
     id: 1,
-    name: "L Arion",
-    price: "70,000 DA",
+    name: "L Alven",
+    price: "106,000 DZD",
     img: sofaImage1,
     rate: "4.8",
     category: "Sofa Furniture",
-    description: `Modèle : L Arion – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Arion – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -86,12 +86,12 @@ Garantie : 3 ans ✅`,
   },
   {
     id: 2,
-    name: "L Alven",
-    price: "100,000 DA",
+    name: "L Arion",
+    price: "98,000 DZD",
     img: sofaImage2,
     rate: "4.3",
     category: "Sofa Furniture",
-    description: `Modèle : L Alven – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Alven – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -104,11 +104,11 @@ Garantie : 3 ans ✅`,
   {
     id: 3,
     name: "L Arko",
-    price: "60,000 DA",
+    price: "78,000 DZD",
     img: sofaImage3,
     rate: "4.6",
     category: "Sofa Furniture",
-    description: `Modèle : L Arko – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Arko – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -121,7 +121,7 @@ Garantie : 3 ans ✅`,
   {
     id: 4,
     name: "Lorene",
-    price: "120,000 DA",
+    price: "106,000 DZD",
     img: sofaImage4,
     rate: "4.9",
     category: "Sofa Furniture",
@@ -138,11 +138,11 @@ Garantie : 3 ans ✅`,
   {
     id: 5,
     name: "L Jero",
-    price: "110,000 DA",
+    price: "78,000 DZD",
     img: sofaImage5,
     rate: "4.2",
     category: "Sofa Furniture",
-    description: `Modèle : L Jero – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Jero – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -155,11 +155,11 @@ Garantie : 3 ans ✅`,
   {
     id: 6,
     name: "L Cornel",
-    price: "60,000 DA",
+    price: "88,000 DZD",
     img: sofaImage6,
     rate: "4.7",
     category: "Sofa Furniture",
-    description: `Modèle : L Cornel – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Cornel – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -172,11 +172,11 @@ Garantie : 3 ans ✅`,
   {
     id: 7,
     name: "L Loriva",
-    price: "70,000 DA",
+    price: "78,000 DZD",
     img: sofaImage7,
     rate: "4.4",
     category: "Sofa Furniture",
-    description: `Modèle : L Loriva – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Loriva – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -189,7 +189,7 @@ Garantie : 3 ans ✅`,
   {
     id: 8,
     name: "Evada",
-    price: "70,000 DA",
+    price: "130,000 DZD",
     img: sofaImage8,
     rate: "4.1",
     category: "Sofa Furniture",
@@ -206,7 +206,7 @@ Garantie : 3 ans ✅`,
   {
     id: 9,
     name: "Viron",
-    price: "70,000 DA",
+    price: "88,000 DZD",
     img: sofaImage9,
     rate: "4.5",
     category: "Sofa Furniture",
@@ -244,7 +244,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage11,
     rate: "4.6",
     category: "Sofa Furniture",
-    description: `Modèle : L Maxwel – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Maxwel – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -278,7 +278,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage13,
     rate: "4.7",
     category: "Sofa Furniture",
-    description: `Modèle : L Arena – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Arena – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -291,7 +291,7 @@ Garantie : 3 ans ✅`,
   {
     id: 14,
     name: "Kamille",
-    price: "70,000 DA",
+    price: "86,000 DZD",
     img: sofaImage14,
     rate: "4.5",
     category: "Sofa Furniture",
@@ -308,7 +308,7 @@ Garantie : 3 ans ✅`,
   {
     id: 15,
     name: "Panda",
-    price: "70,000 DA",
+    price: "115,000 DZD",
     img: sofaImage15,
     rate: "4.9",
     category: "Sofa Furniture",
@@ -325,11 +325,11 @@ Garantie : 3 ans ✅`,
   {
     id: 16,
     name: "L Ropose",
-    price: "70,000 DA",
+    price: "86,000 DZD",
     img: sofaImage16,
     rate: "4.2",
     category: "Sofa Furniture",
-    description: `Modèle : L Ropose – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Ropose – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -342,11 +342,11 @@ Garantie : 3 ans ✅`,
   {
     id: 17,
     name: "L Panda",
-    price: "70,000 DA",
+    price: "96,000 DZD",
     img: sofaImage17,
     rate: "4.4",
     category: "Sofa Furniture",
-    description: `Modèle : L Panda – 2.80m / 1.90m + 1 place 🛋️
+    description: `Modèle : L Panda – 2.80m / 1.80m + 1 place 🛋️
 Dimensions & couleurs : au choix 🎨
 Cadre en bois rouge massif 🌲
 Pieds en bois hêtre 🪵
@@ -359,7 +359,7 @@ Garantie : 3 ans ✅`,
   {
     id: 18,
     name: "Mira",
-    price: "70,000 DA",
+    price: "75,000 DZD",
     img: sofaImage18,
     rate: "4.6",
     category: "Sofa Furniture",
@@ -665,7 +665,7 @@ Livraison : disponible dans 58 wilayas 🚚`,
   },
 ];
 
-export default function Products() {
+export default function Products({ addToCart }) {
   const [categorySelected, setCategorySelected] = useState("Sofas");
 
   function handleClickCategory(item) {
@@ -695,11 +695,11 @@ export default function Products() {
       </div>
       <div className="products-content">
         {categorySelected === "Sofas" ? (
-          <ProductsContent contentData={sofasData} />
+          <ProductsContent contentData={sofasData} addToCart={addToCart}/>
         ) : categorySelected === "Coffee Tables" ? (
-          <ProductsContent contentData={coffeeTablesData} />
+          <ProductsContent contentData={coffeeTablesData} addToCart={addToCart}/>
         ) : (
-          <ProductsContent contentData={diningTablesData} />
+          <ProductsContent contentData={diningTablesData} addToCart={addToCart}/>
         )}
       </div>
     </div>

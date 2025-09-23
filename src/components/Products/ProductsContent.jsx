@@ -3,10 +3,10 @@ import "./Products.css";
 import { FaStar } from "react-icons/fa6";
 import { MdOutlineReadMore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function ProductsContent({ contentData }) {
+export default function ProductsContent({ contentData, addToCart }) {
   const [showAll, setShowAll] = useState(false);
   const navigate = useNavigate();
 
@@ -50,7 +50,9 @@ export default function ProductsContent({ contentData }) {
                       handleClickDetails(item);
                     }}
                   />
-                  <IoCartOutline className="btn" />
+                  <IoCartOutline className="btn" onClick={() => {
+                    addToCart(item);
+                  }}/>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 
 import { useNavigate } from "react-router-dom";
 
-export default function Navbar({ handleShowMenu }) {
+export default function Navbar({ handleShowMenu, orders }) {
   let navigate = useNavigate();
 
   function handleClickCartBtn() {
@@ -33,7 +33,7 @@ export default function Navbar({ handleShowMenu }) {
           <RxHamburgerMenu className="navbar-icon" onClick={handleShowMenu} />
           <div className="cart-icon">
             <IoCartOutline className="navbar-icon" onClick={handleClickCartBtn}/>
-            <span>4</span>
+            <span>{orders}</span>
           </div>
           <IoPersonOutline className="navbar-icon" />
         </div>
