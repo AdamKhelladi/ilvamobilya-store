@@ -64,7 +64,7 @@
   .cart-item
   .item-content
   .close-btn:hover {
-  color: rgb(219, 0, 0);
+  color: var(--p-color);
 }
 
 .cart-container
@@ -299,6 +299,9 @@
 }
 
 @media (max-width: 450px) {
+  .cart-container .cart-left .cart-products .cart-item .item-content {
+    padding-right: 10px;
+  }
   .cart-container
     .cart-left
     .cart-products
