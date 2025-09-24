@@ -39,7 +39,9 @@ function App() {
   function addToCart(item) {
     let cart = getCartFromLocalStorage();
 
-    if (!cart.some((product) => product.name === item.name)) {
+    let uniqueKey = `${item.category}-${item.id}`
+
+    if (!cart.some((product) => `${product.category}-${product.id}` === uniqueKey)) {
       cart.push(item);
       localStorage.setItem("cartItems", JSON.stringify(cart));
 
