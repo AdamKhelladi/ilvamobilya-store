@@ -3,7 +3,7 @@ import "./Products.css";
 import { FaStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 
-export default function ProductDetails() {
+export default function ProductDetails({ addToCart }) {
   const { id } = useParams();
   const { state: product } = useLocation();
 
@@ -29,7 +29,12 @@ export default function ProductDetails() {
               <h3>{product.name}</h3>
               <p>{product.price}</p>
             </div>
-            <IoCartOutline className="btn" />
+            <IoCartOutline
+              className="btn"
+              onClick={() => {
+                addToCart(product);
+              }}
+            />
           </div>
           <p className="details-description">{product.description}</p>
           <a href="https://www.facebook.com/ilvamobilya" target="_blank">

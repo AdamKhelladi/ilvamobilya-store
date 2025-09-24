@@ -22,6 +22,7 @@
 
 .cart-container .cart-left {
   width: 45%;
+  height: 100%;
   border: 1px solid var(--border-color);
   padding: 20px;
   border-radius: 10px;
@@ -100,6 +101,10 @@
   width: 140px;
 }
 
+.cart-container .cart-left .cart-content {
+  height: 100%;
+}
+
 .cart-container .cart-left .coupon {
   margin-top: 20px;
 }
@@ -143,8 +148,18 @@
   margin-top: 10px;
 }
 
+.cart-empty-msg {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--text-primary);
+}
+
 .cart-container .cart-right {
   background-color: var(--text-primary);
   color: #fff;
   width: 380px;
+}
+
+.cart-container .cart-right .payment-info {
+  height: 500px;
 }

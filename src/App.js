@@ -28,9 +28,17 @@ function App() {
     }
   }
 
-  let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+  function getCartFromLocalStorage() {
+    try {
+      return JSON.parse(localStorage.getItem("cartItems")) || [];
+    } catch {
+      return [];
+    }
+  }
 
   function addToCart(item) {
+    let cart = getCartFromLocalStorage();
+
     if (!cart.some((product) => product.name === item.name)) {
       cart.push(item);
       localStorage.setItem("cartItems", JSON.stringify(cart));
@@ -39,9 +47,16 @@ function App() {
     }
   }
 
+  function deleteItem(item) {
+    let currentCart = getCartFromLocalStorage();
+    currentCart = currentCart.filter((product) => product.name !== item.name);
+    localStorage.setItem("cartItems", JSON.stringify(currentCart));
+
+    setCartItems(currentCart);
+  }
+
   useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cartItems") || "[]");
-    setCartItems(storedCart);
+    setCartItems(getCartFromLocalStorage());
   }, []);
 
   useEffect(() => {
@@ -51,7 +66,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar handleShowMenu={handleShowMenu} orders={orders}/>
+        <Navbar handleShowMenu={handleShowMenu} orders={orders} />
         {showMenu ? (
           <Menu handleShowMenu={handleShowMenu} showMenu={showMenu} />
         ) : null}
@@ -70,9 +85,15 @@ function App() {
             }
           ></Route>
 
-          <Route path="/product/:id" element={<ProductDetails />}></Route>
+          <Route
+            path="/product/:id"
+            element={<ProductDetails addToCart={addToCart} />}
+          ></Route>
 
-          <Route path="/cart" element={<Cart cartItems={cartItems} />}></Route>
+          <Route
+            path="/cart"
+            element={<Cart cartItems={cartItems} deleteItem={deleteItem} />}
+          ></Route>
         </Routes>
       </div>
     </Router>
