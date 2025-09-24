@@ -99,7 +99,7 @@
   height: 100%;
   top: 0;
   position: absolute;
-  background: linear-gradient(135deg, #493927a4);
+  background: linear-gradient(135deg, #1d1205a4);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
@@ -155,11 +155,11 @@
 }
 
 .menu .menu-links a {
-  color: var(--text-primary);
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
-  background-color: #d8ad9b;
+  background-color: var(--text-primary);
+  color: #fff;
   padding: 10px;
   width: 80%;
   text-align: center;
@@ -168,7 +168,7 @@
   transition: 0.3s;
 }
 .menu .menu-links a:hover {
-  background-color: var(--border-color);
+  background-color: var(--text-secondary);
 }
 
 /* Media */
