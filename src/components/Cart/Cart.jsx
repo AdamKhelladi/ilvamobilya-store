@@ -16,20 +16,35 @@ export default function Cart({ cartItems, deleteItem }) {
     address: "",
   });
 
-  function handleChange(e) {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  }
-
-  function handleSubmitBtn() {
-    localStorage.removeItem("cartItems");
-  }
-
   const isFormValid =
     cartItems.length > 0 &&
     formData.name.trim() &&
     formData.email.trim() &&
     formData.phone.trim() &&
     formData.address.trim();
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    }).then((response) => {
+      if (response.ok) {
+        localStorage.removeItem("cartItems");
+        setFormData({ name: "", email: "", phone: "", address: "" });
+        alert("Order sent successfully ✅");
+      } else {
+        alert("Something went wrong ❌");
+      }
+    });
+  }
 
   useEffect(() => {
     let total = cartItems.reduce((acc, item) => {
@@ -88,7 +103,12 @@ export default function Cart({ cartItems, deleteItem }) {
             <h3>Payment Details</h3>
 
             <div className="client-infos">
-              <form className="form" action="" method="POST">
+              <form
+                className="form"
+                action=""
+                method="POST"
+                onSubmit={handleSubmit}
+              >
                 <div>
                   <IoPersonOutline className="icon" />
                   <input
@@ -146,7 +166,6 @@ export default function Cart({ cartItems, deleteItem }) {
                   type="submit"
                   className="form-btn"
                   disabled={!isFormValid}
-                  onClick={handleSubmitBtn}
                 >
                   Order Now
                 </button>
@@ -169,7 +188,7 @@ export default function Cart({ cartItems, deleteItem }) {
                 <input
                   type="hidden"
                   name="total_price"
-                  value={`${totalPrice}$`}
+                  value={`${totalPrice} DZD`}
                 />
               </form>
             </div>

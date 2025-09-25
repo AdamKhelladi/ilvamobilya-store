@@ -248,6 +248,7 @@
   width: 250px;
   height: 100px;
   font-size: 14px;
+  font-family: "Open sans", "Inter", sans-serif;
   transition: 0.3s;
 }
 .client-infos .form textarea:hover,
