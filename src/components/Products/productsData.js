@@ -102,7 +102,8 @@ export const sofasData = [
     img: sofaImage4,
     rate: "4.9",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02bC8Nkj8WkYS3Zs2L7Gmc5sWBTaRLvURaGH8rjk9mQHAbFufaBCPMg42qAgW5ZwaQl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 5,
@@ -111,7 +112,8 @@ export const sofasData = [
     img: sofaImage5,
     rate: "4.2",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0qCynSQXE3FzfLBRP2CuMS3sLcaxGnc97sdm7gJfKYTJBuZ6joNNCV9iLCMN1vaVsl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 6,
@@ -120,7 +122,8 @@ export const sofasData = [
     img: sofaImage6,
     rate: "4.7",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02skjrUA92rM4KNSHLnQE2RVCJgZnk1ViFHG9d9S1Vzz8JYfuSGuW1LqT1K3JbhCErl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 7,
@@ -129,7 +132,8 @@ export const sofasData = [
     img: sofaImage7,
     rate: "4.4",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02SZ571emRYvta6uuqCG4avQTwVoPXUNxe1do3rzabYY44Y6XNRzmNfTHUbwyErDd1l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 8,
@@ -138,7 +142,8 @@ export const sofasData = [
     img: sofaImage8,
     rate: "4.1",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0jVrXmvAZDirG4Epa4e6dHAZa1M3wr8v4qcvdFFUJVs4frpZjhMZEW9bfNkJpW9htl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 9,
@@ -147,7 +152,8 @@ export const sofasData = [
     img: sofaImage9,
     rate: "4.5",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid04Ec46enw23vP2Sug3vmpQsKPc666xKN3fkpASbmNHWz7c5a1V3nh2ozSjGWe4Lj6l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 10,
@@ -156,7 +162,8 @@ export const sofasData = [
     img: sofaImage10,
     rate: "4.8",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02XK3co2d1Nz9aB3n68oGrzV9mGfLF3t7qHvqXW5bhi2JZPudf7XV88t57KqH72n4ml%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 11,
@@ -165,7 +172,8 @@ export const sofasData = [
     img: sofaImage11,
     rate: "4.6",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0i6PCmVVapNneGKFQyytomG9KX7Uis5bbym8kM47f64Mfv5qj7MzPcQiHwaeVkp34l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 12,
@@ -174,7 +182,8 @@ export const sofasData = [
     img: sofaImage12,
     rate: "4.3",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0jbeF4fAcRgsyhqWYrsmhJvtH242n51BEMAEEd4LvCpxPLbUfRxQJ6SnRZSSdz8zYl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 13,
@@ -183,7 +192,8 @@ export const sofasData = [
     img: sofaImage13,
     rate: "4.7",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02MayYcFR4MNxYy7PwH1hExXtFWNhB7U5QbQ6NKmPW8pRKxKWobPceisNg5wXDwsFwl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 14,
@@ -192,7 +202,8 @@ export const sofasData = [
     img: sofaImage14,
     rate: "4.5",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0EEwwks6QDMBgBEV7mb5tyFVJB9kMpCiYHFdgsMaBkL7c33mMj6sFHdTFyGAS85hSl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 15,
@@ -201,7 +212,8 @@ export const sofasData = [
     img: sofaImage15,
     rate: "4.9",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02C4osiKqSgGGNpcePBe7g46Vv9NaxR54j5eymhx9h54WSoPRCZgGrkBSw4SQc7SCVl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 16,
@@ -210,7 +222,8 @@ export const sofasData = [
     img: sofaImage16,
     rate: "4.2",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0Xm9XKTGCrYtSaSUSdG3CEBtnNtGCDRBPvotHgRT5JuFpYFPxkngnKeZgPuR7FVoQl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 17,
@@ -219,7 +232,8 @@ export const sofasData = [
     img: sofaImage17,
     rate: "4.4",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02V4yaSR6KrW1oHzujHvzjCYqkTNsKEqVTmGFokNYmiKnL3N3H3rUrEb43kaLMTYewl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 18,
@@ -228,7 +242,8 @@ export const sofasData = [
     img: sofaImage18,
     rate: "4.6",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ZukrXw49xuesCHU2BMQ7uj3ocGpzUKSWS1ib3fqCQ4d8Lrao9Ex4M3GohdkEuEV6l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 19,
@@ -237,7 +252,8 @@ export const sofasData = [
     img: sofaImage19,
     rate: "4.1",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02T41gtbQoQco4UwBKVJGr1b7tyuibB4MWimj6WiX6x9Ev25JENK1HXZJzWuCMrZi3l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 20,
@@ -246,7 +262,8 @@ export const sofasData = [
     img: sofaImage20,
     rate: "4.8",
     category: "Sofa Furniture",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0erm57Jrmt1PcADfgmvvLnqSJhtiGGxA9m9dq1ztQ5LSsCRjLXMgJHABvFr6FbvJ2l%26id%3D61572166948470&show_text=true&width=500",
   },
 ];
 
@@ -258,7 +275,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage1,
     rate: "4.8",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 2,
@@ -267,7 +285,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage2,
     rate: "4.2",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 3,
@@ -276,7 +295,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage3,
     rate: "4.6",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 4,
@@ -285,7 +305,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage4,
     rate: "4.3",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 5,
@@ -294,7 +315,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage5,
     rate: "4.9",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 6,
@@ -303,7 +325,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage6,
     rate: "4.1",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 7,
@@ -312,7 +335,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage7,
     rate: "4.7",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 8,
@@ -321,7 +345,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage8,
     rate: "4.4",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 9,
@@ -330,7 +355,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage9,
     rate: "4.5",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 10,
@@ -339,7 +365,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage10,
     rate: "4.0",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02KiChLPhXhJssJYALERZERpwnYadge8eTHGfTqMLB8gGWWjVNjS37CbxqWx8MzRN5l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 11,
@@ -348,7 +375,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage11,
     rate: "4.6",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 12,
@@ -357,7 +385,8 @@ export const coffeeTablesData = [
     img: coffeeTableImage12,
     rate: "4.3",
     category: "Coffee Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0XSujpqrwf57vYFCUn8enbKeyvVuv6Z2DdUbsQEV5cy7aRruSsB3aSHKsAoCCZdz7l%26id%3D61572166948470&show_text=true&width=500",
   },
 ];
 
@@ -369,7 +398,8 @@ export const diningTablesData = [
     img: diningTableImage1,
     rate: "4.7",
     category: "Dining Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0naJZqqmCLVNJoGZmQ8upd1nywMSMZ8D3mW8HzrZtMJyWVSgcqxmk3gB1GADvzoKxl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 2,
@@ -378,7 +408,8 @@ export const diningTablesData = [
     img: diningTableImage2,
     rate: "4.3",
     category: "Dining Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0GWyx8evpmqi9rHRGH6VeQFXs4aqFrSdTn3MXrnzx3XxWSvzJGKQfVQNSK1XLxaV9l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 3,
@@ -387,7 +418,8 @@ export const diningTablesData = [
     img: diningTableImage3,
     rate: "4.6",
     category: "Dining Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0HyHwf7aqUbHbESFUM5QqitH49aC3EHRVgf741enW2FAqXb5kbSP4idojQ41J3aREl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 4,
@@ -396,7 +428,8 @@ export const diningTablesData = [
     img: diningTableImage4,
     rate: "4.1",
     category: "Dining Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ehUfa5hvxzXXtAtZGpYYtpBpQyuhPW57ekAZnYFpSDGewvkVBdGj3gMtY6WcPfidl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 5,
@@ -405,6 +438,7 @@ export const diningTablesData = [
     img: diningTableImage5,
     rate: "4.8",
     category: "Dining Table",
-    fbLink: "",
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ehUfa5hvxzXXtAtZGpYYtpBpQyuhPW57ekAZnYFpSDGewvkVBdGj3gMtY6WcPfidl%26id%3D61572166948470&show_text=true&width=500",
   },
 ];
