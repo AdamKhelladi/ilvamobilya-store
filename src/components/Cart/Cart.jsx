@@ -9,6 +9,27 @@ import { IoLocationOutline } from "react-icons/io5";
 
 export default function Cart({ cartItems, deleteItem }) {
   const [totalPrice, setTotalPrice] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+  });
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  function handleSubmitBtn() {
+    localStorage.removeItem("cartItems");
+  }
+
+  const isFormValid =
+    cartItems.length > 0 &&
+    formData.name.trim() &&
+    formData.email.trim() &&
+    formData.phone.trim() &&
+    formData.address.trim();
 
   useEffect(() => {
     let total = cartItems.reduce((acc, item) => {
@@ -74,8 +95,8 @@ export default function Cart({ cartItems, deleteItem }) {
                     type="text"
                     name="name"
                     placeholder="Full name"
-                    // value={formData.name}
-                    // onChange={handleChange}
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -86,8 +107,8 @@ export default function Cart({ cartItems, deleteItem }) {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    // value={formData.email}
-                    // onChange={handleChange}
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -98,8 +119,8 @@ export default function Cart({ cartItems, deleteItem }) {
                     type="tel"
                     name="phone"
                     placeholder="Phone number"
-                    // value={formData.phone}
-                    // onChange={handleChange}
+                    value={formData.phone}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -110,18 +131,27 @@ export default function Cart({ cartItems, deleteItem }) {
                     type="text"
                     name="address"
                     placeholder="Address"
-                    // value={formData.address}
-                    // onChange={handleChange}
+                    value={formData.address}
+                    onChange={handleChange}
                   />
                 </div>
 
                 <textarea
                   name="message"
                   placeholder="Message"
-                  // onChange={handleChange}
+                  onChange={handleChange}
                 />
 
-                {/* {cartItems.map((item, index) => (
+                <button
+                  type="submit"
+                  className="form-btn"
+                  disabled={!isFormValid}
+                  onClick={handleSubmitBtn}
+                >
+                  Order Now
+                </button>
+
+                {cartItems.map((item, index) => (
                   <div key={index}>
                     <input
                       type="hidden"
@@ -134,22 +164,13 @@ export default function Cart({ cartItems, deleteItem }) {
                       value={item.price}
                     />
                   </div>
-                ))} */}
+                ))}
 
                 <input
                   type="hidden"
                   name="total_price"
                   value={`${totalPrice}$`}
                 />
-
-                <button
-                  type="submit"
-                  className="form-btn"
-                  // disabled={!isFormValid}
-                  // onClick={handleSubmitBtn}
-                >
-                  Order Now
-                </button>
               </form>
             </div>
           </div>

@@ -266,8 +266,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
-  margin: 10px auto 0;
-  display: block;
+  margin-top: 10px;
 }
 .client-infos .form-btn:hover {
   transform: translateY(3px);
