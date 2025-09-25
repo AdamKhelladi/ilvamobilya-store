@@ -72,15 +72,8 @@ export const sofasData = [
     img: sofaImage1,
     rate: "4.8",
     category: "Sofa Furniture",
-    description: `Modèle : L Arion – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid03589hH6sLBcgGGeerMXSTEYwU81RhwADBRKFXvXChB8oq11hKevX3ZFhqkCRyucDgl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 2,
@@ -89,15 +82,8 @@ Garantie : 3 ans ✅`,
     img: sofaImage2,
     rate: "4.3",
     category: "Sofa Furniture",
-    description: `Modèle : L Alven – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02rCKAwarjzwkLZV6rYuV6Yn2U2YkEeEdQQyLyXxVfGM6hP6NHR3o74JaouUi9ufyZl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 3,
@@ -106,15 +92,8 @@ Garantie : 3 ans ✅`,
     img: sofaImage3,
     rate: "4.6",
     category: "Sofa Furniture",
-    description: `Modèle : L Arko – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink:
+      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ckt9LNDPf689Jc3o6Y6P6S3sby7c8szWWY1E81FgddBVUMA1b7xEJAnHNoqQhzX8l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
     id: 4,
@@ -123,15 +102,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage4,
     rate: "4.9",
     category: "Sofa Furniture",
-    description: `Modèle : Lorene (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 5,
@@ -140,15 +111,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage5,
     rate: "4.2",
     category: "Sofa Furniture",
-    description: `Modèle : L Jero – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 6,
@@ -157,15 +120,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage6,
     rate: "4.7",
     category: "Sofa Furniture",
-    description: `Modèle : L Cornel – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 7,
@@ -174,15 +129,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage7,
     rate: "4.4",
     category: "Sofa Furniture",
-    description: `Modèle : L Loriva – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 8,
@@ -191,15 +138,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage8,
     rate: "4.1",
     category: "Sofa Furniture",
-    description: `Modèle : Evada (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 9,
@@ -208,15 +147,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage9,
     rate: "4.5",
     category: "Sofa Furniture",
-    description: `Modèle : Viron (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 10,
@@ -225,15 +156,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage10,
     rate: "4.8",
     category: "Sofa Furniture",
-    description: `Modèle : Classique (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 11,
@@ -242,15 +165,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage11,
     rate: "4.6",
     category: "Sofa Furniture",
-    description: `Modèle : L Maxwel – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 12,
@@ -259,15 +174,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage12,
     rate: "4.3",
     category: "Sofa Furniture",
-    description: `Modèle : Arena (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 13,
@@ -276,15 +183,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage13,
     rate: "4.7",
     category: "Sofa Furniture",
-    description: `Modèle : L Arena – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 14,
@@ -293,15 +192,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage14,
     rate: "4.5",
     category: "Sofa Furniture",
-    description: `Modèle : Kamille (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 15,
@@ -310,15 +201,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage15,
     rate: "4.9",
     category: "Sofa Furniture",
-    description: `Modèle : Panda (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 16,
@@ -327,15 +210,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage16,
     rate: "4.2",
     category: "Sofa Furniture",
-    description: `Modèle : L Ropose – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 17,
@@ -344,15 +219,7 @@ Garantie : 3 ans ✅`,
     img: sofaImage17,
     rate: "4.4",
     category: "Sofa Furniture",
-    description: `Modèle : L Panda – 2.80m / 1.80m + 1 place 🛋️
-Dimensions & couleurs : au choix 🎨
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 10676100627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 18,
@@ -361,49 +228,25 @@ Garantie : 3 ans ✅`,
     img: sofaImage18,
     rate: "4.6",
     category: "Sofa Furniture",
-    description: `Modèle : Mira (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 19,
     name: "Bubly",
-    price: "70,000 DA",
+    price: "135,000 DZD",
     img: sofaImage19,
     rate: "4.1",
     category: "Sofa Furniture",
-    description: `Modèle : Bubly (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
   {
     id: 20,
     name: "Fendi",
-    price: "70,000 DA",
+    price: "115,000 DZD",
     img: sofaImage20,
     rate: "4.8",
     category: "Sofa Furniture",
-    description: `Modèle : Fendi (6 places) 🛋️
-Cadre en bois rouge massif 🌲
-Pieds en bois hêtre 🪵
-Tissu anti-tâche 🧼
-Éponge D30 / D36 (HR orthopédique sur commande) 🛡️
-Toutes les couleurs disponibles 🎨
-Livraison : disponible dans 58 wilayas 🚚
-Service commercial : 0676 100 627 / 0558 321 760 ☎️
-Garantie : 3 ans ✅`,
+    fbLink: "",
   },
 ];
 
@@ -411,182 +254,110 @@ export const coffeeTablesData = [
   {
     id: 1,
     name: "MDF Luxury Marble",
-    price: "20,000 DA",
+    price: "20,000 DZD",
     img: coffeeTableImage1,
     rate: "4.8",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 2,
     name: "Rounded Wooden",
-    price: "10,000 DA",
+    price: "10,000 DZD",
     img: coffeeTableImage2,
     rate: "4.2",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 3,
     name: "MDF Luxury Marble",
-    price: "10,000 DA",
+    price: "10,000 DZD",
     img: coffeeTableImage3,
     rate: "4.6",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 4,
     name: "Classic Oak",
-    price: "12,000 DA",
+    price: "12,000 DZD",
     img: coffeeTableImage4,
     rate: "4.3",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 5,
     name: "MDF Luxury Marble",
-    price: "20,000 DA",
+    price: "20,000 DZD",
     img: coffeeTableImage5,
     rate: "4.9",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 6,
     name: "Rounded Wooden",
-    price: "10,000 DA",
+    price: "10,000 DZD",
     img: coffeeTableImage6,
     rate: "4.1",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 7,
     name: "Rounded Wooden",
-    price: "10,000 DA",
+    price: "10,000 DZD",
     img: coffeeTableImage7,
     rate: "4.7",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 8,
     name: "MDF Luxury Marble",
-    price: "20,000 DA",
+    price: "20,000 DZD",
     img: coffeeTableImage8,
     rate: "4.4",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 9,
     name: "Luxury Marble",
-    price: "120,000 DA",
+    price: "120,000 DZD",
     img: coffeeTableImage9,
     rate: "4.5",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 10,
     name: "Glass Top",
-    price: "22,000 DA",
+    price: "22,000 DZD",
     img: coffeeTableImage10,
     rate: "4.0",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 11,
     name: "MDF Luxury Marble",
-    price: "20,000 DA",
+    price: "20,000 DZD",
     img: coffeeTableImage11,
     rate: "4.6",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 12,
     name: "Glass Top",
-    price: "15,000 DA",
+    price: "15,000 DZD",
     img: coffeeTableImage12,
     rate: "4.3",
     category: "Coffee Table",
-    description: `Table Base (Coffee Table) ☕️
-Design élégant et moderne ✨
-Matériaux solides et durables 🪵
-Disponible en plusieurs couleurs 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
 ];
 
@@ -594,72 +365,46 @@ export const diningTablesData = [
   {
     id: 1,
     name: "Glass Top",
-    price: "40,000 DA",
+    price: "40,000 DZD",
     img: diningTableImage1,
     rate: "4.7",
     category: "Dining Table",
-    description: `Table à manger TOT 🍽️
-Disponible en plusieurs modèles : 4 chaises et 6 chaises 🪑
-Couleur de chaise au choix 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 2,
     name: "Glass Top",
-    price: "40,000 DA",
+    price: "40,000 DZD",
     img: diningTableImage2,
     rate: "4.3",
     category: "Dining Table",
-    description: `Table à manger TOT 🍽️
-Disponible en plusieurs modèles : 4 chaises et 6 chaises 🪑
-Couleur de chaise au choix 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 3,
     name: "MDF Luxury Marble",
-    price: "48,000 DA",
+    price: "48,000 DZD",
     img: diningTableImage3,
     rate: "4.6",
     category: "Dining Table",
-    description: `Table à manger TOT 🍽️
-Disponible en plusieurs modèles : 4 chaises et 6 chaises 🪑
-Couleur de chaise au choix 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 4,
-    name: "Rounded wooden",
-    price: "42,000 DA",
+    name: "Rounded Wooden",
+    price: "42,000 DZD",
     img: diningTableImage4,
     rate: "4.1",
     category: "Dining Table",
-    description: `Table à manger TOT 🍽️
-Disponible en plusieurs modèles : 4 chaises et 6 chaises 🪑
-Couleur de chaise au choix 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
   {
     id: 5,
     name: "MDF Luxury Marble",
-    price: "48,000 DA",
+    price: "48,000 DZD",
     img: diningTableImage5,
     rate: "4.8",
     category: "Dining Table",
-    description: `Table à manger TOT 🍽️
-Disponible en plusieurs modèles : 4 chaises et 6 chaises 🪑
-Couleur de chaise au choix 🎨
-Contact : messagerie privée ou téléphone ☎️
-📞 0558 321 760 / 0676 100 627
-Livraison : disponible dans 58 wilayas 🚚`,
+    fbLink: "",
   },
 ];
-

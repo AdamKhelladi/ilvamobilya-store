@@ -13,7 +13,6 @@ export default function ProductDetails({ addToCart }) {
   return (
     <div className="container">
       <div className="product-details">
-        <img src={product.img} alt={product.name} />
         <div className="content">
           <div className="stars-rate">
             <p>{product.category}</p>
@@ -36,10 +35,22 @@ export default function ProductDetails({ addToCart }) {
               }}
             />
           </div>
-          <p className="details-description">{product.description}</p>
-          <a href="https://www.facebook.com/ilvamobilya" target="_blank">
-            View on Facebook
-          </a>
+        </div>
+
+        <p className="more-on-fb">🢃 More details on facebook post 🢃</p>
+
+        <div class="fb-post">
+          <iframe
+            className="post-frame"
+            src={product.fbLink}
+            width="500"
+            height="659"
+            style={{ border: "none", overflow: "hidden" }}
+            scrolling="yes"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </div>
     </div>
