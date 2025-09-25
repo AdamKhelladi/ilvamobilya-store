@@ -39,9 +39,11 @@ function App() {
   function addToCart(item) {
     let cart = getCartFromLocalStorage();
 
-    let uniqueKey = `${item.category}-${item.id}`
+    let uniqueKey = `${item.category}-${item.id}`;
 
-    if (!cart.some((product) => `${product.category}-${product.id}` === uniqueKey)) {
+    if (
+      !cart.some((product) => `${product.category}-${product.id}` === uniqueKey)
+    ) {
       cart.push(item);
       localStorage.setItem("cartItems", JSON.stringify(cart));
 
@@ -51,7 +53,10 @@ function App() {
 
   function deleteItem(item) {
     let currentCart = getCartFromLocalStorage();
-    currentCart = currentCart.filter((product) => product.name !== item.name);
+    currentCart = currentCart.filter(
+      (product) =>
+        `${product.category}-${product.id}` !== `${item.category}-${item.id}`
+    );
     localStorage.setItem("cartItems", JSON.stringify(currentCart));
 
     setCartItems(currentCart);
@@ -94,7 +99,13 @@ function App() {
 
           <Route
             path="/cart"
-            element={<Cart cartItems={cartItems} deleteItem={deleteItem} />}
+            element={
+              <Cart
+                cartItems={cartItems}
+                deleteItem={deleteItem}
+                orders={orders}
+              />
+            }
           ></Route>
         </Routes>
       </div>

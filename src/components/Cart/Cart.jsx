@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import "./Cart.css";
-import { IoMdClose } from "react-icons/io";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
-export default function Cart({ cartItems, deleteItem }) {
+export default function Cart({ cartItems, deleteItem, orders }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
@@ -52,7 +53,7 @@ export default function Cart({ cartItems, deleteItem }) {
       return acc + parseInt(clearPrice);
     }, 0);
 
-    setTotalPrice(total);
+    setTotalPrice(total.toLocaleString());
   }, [cartItems]);
 
   return (
@@ -61,7 +62,11 @@ export default function Cart({ cartItems, deleteItem }) {
         <div className="cart-left">
           <div className="cart-content">
             <div className="cart-products">
-              <h3>My Cart</h3>
+              <div className="cart-left-title">
+                <IoCartOutline className="cart-icon"/>
+                <h3>Your Cart ({orders})</h3>
+              </div>
+              
               {cartItems.length < 1 ? (
                 <p className="cart-empty-msg">
                   Your cart is empty 🛒 — start shopping now!
@@ -76,7 +81,7 @@ export default function Cart({ cartItems, deleteItem }) {
                         <p className="item-category">{item.category}</p>
                         <p>{item.price}</p>
                       </div>
-                      <IoMdClose
+                      <FaRegTrashAlt
                         className="close-btn"
                         onClick={() => {
                           deleteItem(item);
