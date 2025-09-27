@@ -12,6 +12,7 @@ import ProductDetails from "./components/Products/ProductDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Testimonials from "./components/Testimonials/Testimonials";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
