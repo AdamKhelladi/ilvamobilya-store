@@ -25,7 +25,7 @@
 }
 
 ::selection {
-  background: var(--text-primary); /* background color */
+  background: #000; /* background color */
   color: #fff;         /* text color */
 }
 
