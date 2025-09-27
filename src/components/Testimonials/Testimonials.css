@@ -1,0 +1,121 @@
+.testimonials-container {
+  width: 900px;
+  padding: 50px 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials-container .testimonials-title {
+  text-align: start;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.testimonials-container h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+}
+
+.testimonials-container .testimonials-title .first-p {
+  font-size: 17px;
+  color: #888;
+  margin: 0 0 20px;
+}
+
+.testimonials-container .testimonials-title .second-p {
+  font-size: 17px;
+  margin: 5px 0 0;
+  color: var(--text-secondary);
+}
+
+/* Swiper Container */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Slides */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px; /* size of side images */
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Active (center) slide bigger */
+.swiper-slide-active {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: var(--p-color) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--text-primary) !important;
+}
+
+/* Navigation arrows */
+.slider-controler {
+  position: relative;
+  margin-top: 30px;
+}
+
+.slider-arrow {
+  color: #333;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.slider-arrow:hover {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .testimonials-container {
+    width: 350px;
+    display: block;
+    padding: 50px 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .swiper-slide img {
+    width: 100%;
+    max-width: 320px;
+  }
+  .testimonials-container h1 {
+    font-size: 35px;
+  }
+  .testimonials-container .testimonials-title .testimonials-p {
+    font-size: 15px;
+  }
+}
