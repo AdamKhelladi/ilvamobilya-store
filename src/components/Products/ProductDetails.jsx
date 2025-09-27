@@ -37,7 +37,7 @@ export default function ProductDetails({ addToCart }) {
           </div>
         </div>
 
-        <p className="more-on-fb">🢃 More details on facebook post 🢃</p>
+        <p className="more-on-fb">🢃 Check full details on Facebook 🢃</p>
 
         <div class="fb-post">
           <iframe
