@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Testimonials from "./components/Testimonials/Testimonials";
 import NotFound from "./components/NotFound/NotFound";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -92,6 +93,7 @@ function App() {
                 <Products addToCart={addToCart} />
                 <Testimonials />
               </div>
+              
             }
           ></Route>
 
@@ -112,7 +114,10 @@ function App() {
           ></Route>
 
           <Route path="*" element={<NotFound />}></Route>
+
         </Routes>
+
+        <Footer />
       </div>
     </Router>
   );
