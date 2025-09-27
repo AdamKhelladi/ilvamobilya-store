@@ -123,6 +123,7 @@
 @media (max-width: 750px) {
   .categories-container {
     height: 100%;
+    padding-top: 50px;
   }
   .categories-container .items {
     display: flex;

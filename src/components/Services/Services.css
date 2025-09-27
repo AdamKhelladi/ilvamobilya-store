@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 600px) {
+  .services-container {
+    gap: 0;
+  }
   .services-container .service {
     width: 100%;
   }
