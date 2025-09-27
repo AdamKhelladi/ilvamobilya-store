@@ -16,7 +16,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 export default function Testimonials() {
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" id="testimonials">
       <div className="testimonials-title">
         <h1>Client Satisfaction</h1>
         <p className="first-p">What our customers say about us</p>
@@ -71,7 +71,6 @@ export default function Testimonials() {
         </SwiperSlide>
 
         <div className="slider-controler">
-
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>

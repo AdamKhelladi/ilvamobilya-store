@@ -9,6 +9,7 @@ export default function Menu({ handleShowMenu }) {
     { id: 4, name: "Services", link: "/#services" },
     { id: 2, name: "Categories", link: "/#categories" },
     { id: 5, name: "Products", link: "/#products" },
+    { id: 6, name: "Client Satisfaction", link: "/#testimonials" },
   ];
 
   return (

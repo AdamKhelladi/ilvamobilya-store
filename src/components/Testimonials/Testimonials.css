@@ -33,7 +33,7 @@
 
 .testimonials-container .testimonials-title .second-p {
   font-size: 17px;
-  margin: 5px 0 0;
+  margin: 8px 0 0;
   color: var(--text-secondary);
 }
 
@@ -74,12 +74,13 @@
 
 /* Pagination dots */
 .swiper-pagination-bullet {
-  background: var(--p-color) !important;
-  opacity: 1 !important;
+  background: var(--text-primary) !important;
+  opacity: .3 !important;
 }
 
 .swiper-pagination-bullet-active {
   background: var(--text-primary) !important;
+  opacity: 1 !important;
 }
 
 /* Navigation arrows */
@@ -88,16 +89,6 @@
   margin-top: 30px;
 }
 
-.slider-arrow {
-  color: #333;
-  font-size: 28px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.slider-arrow:hover {
-  color: #000;
-}
 
 @media (max-width: 1000px) {
   .testimonials-container {
