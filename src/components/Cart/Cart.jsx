@@ -163,7 +163,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
 
                 <textarea
                   name="message"
-                  placeholder="Message"
+                  placeholder="Write more details about the products you ordered.."
                   onChange={handleChange}
                 />
 
