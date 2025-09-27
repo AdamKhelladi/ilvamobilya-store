@@ -11,6 +11,7 @@ import ProductDetails from "./components/Products/ProductDetails";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -88,6 +89,7 @@ function App() {
                 <Services />
                 <Categories />
                 <Products addToCart={addToCart} />
+                <Testimonials />
               </div>
             }
           ></Route>
