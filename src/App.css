@@ -1,5 +1,4 @@
 :root {
-  /* Light theme */
   --bg-primary: #f7f7f7;
   --bg-secondary: #f3eade;
   --bg-hover: #f3dec3;
@@ -7,9 +6,10 @@
   --text-secondary: #704a39;
   --p-color: #c4937e;
   --border-color: #b4836d;
-  --gradient-color-one: #fff8f2;
-  --gradient-color-two: #dbcbb5;
+  --gradient-color-one: #fdf8f4;
+  --gradient-color-two: #e2c49a;
 }
+
 
 .App {
   min-height: 100vh;
@@ -26,7 +26,7 @@
 
 ::selection {
   background: #000; /* background color */
-  color: #fff;         /* text color */
+  color: #fff; /* text color */
 }
 
 /* Start Global Rules */

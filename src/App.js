@@ -9,16 +9,26 @@ import About from "./components/About/About";
 import Products from "./components/Products/Products";
 import ProductDetails from "./components/Products/ProductDetails";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Testimonials from "./components/Testimonials/Testimonials";
 import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
 
-function App() {
+function AppContent() {
   const [showMenu, setShowMenu] = useState(false);
   const [orders, setOrders] = useState(0);
   const [cartItems, setCartItems] = useState([]);
+
+  const location = useLocation();
+  const hideFooter =
+    location.pathname === "/cart" ||
+    !["/", "/product"].some((path) => location.pathname.startsWith(path));
 
   function handleShowMenu() {
     const newState = !showMenu;
@@ -74,53 +84,55 @@ function App() {
   }, [cartItems]);
 
   return (
-    <Router>
-      <div className="App">
-        <Navbar handleShowMenu={handleShowMenu} orders={orders} />
-        {showMenu ? (
-          <Menu handleShowMenu={handleShowMenu} showMenu={showMenu} />
-        ) : null}
+    <div className="App">
+      <Navbar handleShowMenu={handleShowMenu} orders={orders} />
+      {showMenu ? (
+        <Menu handleShowMenu={handleShowMenu} showMenu={showMenu} />
+      ) : null}
 
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="container">
-                <Hero />
-                <About />
-                <Services />
-                <Categories />
-                <Products addToCart={addToCart} />
-                <Testimonials />
-              </div>
-              
-            }
-          ></Route>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="container">
+              <Hero />
+              <About />
+              <Services />
+              <Categories />
+              <Products addToCart={addToCart} />
+              <Testimonials />
+            </div>
+          }
+        ></Route>
 
-          <Route
-            path="/product/:id"
-            element={<ProductDetails addToCart={addToCart} />}
-          ></Route>
+        <Route
+          path="/product/:id"
+          element={<ProductDetails addToCart={addToCart} />}
+        ></Route>
 
-          <Route
-            path="/cart"
-            element={
-              <Cart
-                cartItems={cartItems}
-                deleteItem={deleteItem}
-                orders={orders}
-              />
-            }
-          ></Route>
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              cartItems={cartItems}
+              deleteItem={deleteItem}
+              orders={orders}
+            />
+          }
+        ></Route>
 
-          <Route path="*" element={<NotFound />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
 
-        </Routes>
-
-        <Footer />
-      </div>
-    </Router>
+      {!hideFooter && <Footer />}
+    </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}

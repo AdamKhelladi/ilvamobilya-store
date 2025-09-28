@@ -50,16 +50,16 @@ export default function Footer() {
                 </div>
                 <div className="phone">
                   <IoMdPhonePortrait className="info-icon" />
-                  <p>+213 1234567890</p>
+                  <p>+213 676100627</p>
                 </div>
                 <div className="social-media">
-                  <a href="https://www.instagram.com" target="_blank">
+                  <a href="https://www.instagram.com/ilvamobilya" target="_blank">
                     <FaInstagram className="icon" />
                   </a>
-                  <a href="https://www.facebook.com" target="_blank">
+                  <a href="https://www.facebook.com/ilvamobilya" target="_blank">
                     <FaFacebookF className="icon" />
                   </a>
-                  <a href="https://www.tiktok.com" target="_blank">
+                  <a href="https://www.tiktok.com/ilvamobilya" target="_blank">
                     <IoLogoTiktok className="icon" />
                   </a>
                 </div>
