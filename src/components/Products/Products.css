@@ -18,10 +18,9 @@
 }
 
 .products-container .products-categories .category {
-  background-color: var(--bg-hover);
-  border: 2px solid var(--bg-hover);
+  border: 2px solid var(--gradient-color-two);
   height: 40px;
-  border-radius: 10px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -29,10 +28,12 @@
   transition: 0.3s;
 }
 .products-container .products-categories .category.categorySelected {
-  border: 2px solid var(--border-color);
+  background-color: var(--bg-hover);
+  border: 2px solid var(--bg-hover);
 }
 .products-container .products-categories .category:hover {
-  border: 2px solid var(--border-color);
+  background-color: var(--bg-hover);
+  border: 2px solid var(--bg-hover);
 }
 
 .products-container .products-categories .category h3 {
