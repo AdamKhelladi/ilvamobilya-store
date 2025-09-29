@@ -45,7 +45,7 @@ export default function Categories() {
                 initial={{ scale: 0.3, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
               >
                 {item.type}
               </motion.div>
@@ -53,7 +53,7 @@ export default function Categories() {
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
               >
                 {item.title}
               </motion.h1>
@@ -61,7 +61,7 @@ export default function Categories() {
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
               >
                 {item.description}
               </motion.p>
@@ -74,7 +74,7 @@ export default function Categories() {
               initial={{opacity: 0 }}
               whileInView={{opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             />
           </div>
         ))}

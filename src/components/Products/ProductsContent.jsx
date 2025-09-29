@@ -26,53 +26,51 @@ export default function ProductsContent({ contentData, addToCart }) {
   return (
     <div style={{ position: "relative" }}>
       <div className="product-content">
-        <AnimatePresence>
-          {displayedProducts.map((item) => (
-            <motion.div
-              key={item.id}
-              className="item"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <div className="item-img">
-                <img src={item.img} alt={item.name} />
-              </div>
-              <div className="item-content">
-                <div className="stars-rate">
-                  <p>{item.category}</p>
-                  <div className="rate">
-                    <div className="star">
-                      <FaStar />
-                    </div>
-                    <span>{item.rate}</span>
+        {displayedProducts.map((item) => (
+          <motion.div
+            key={item.id}
+            className="item"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <div className="item-img">
+              <img src={item.img} alt={item.name} />
+            </div>
+            <div className="item-content">
+              <div className="stars-rate">
+                <p>{item.category}</p>
+                <div className="rate">
+                  <div className="star">
+                    <FaStar />
                   </div>
-                </div>
-                <div className="content">
-                  <div>
-                    <h3>{item.name}</h3>
-                    <p>{item.price}</p>
-                  </div>
-                  <div className="item-btns">
-                    <MdOutlineReadMore
-                      className="btn"
-                      onClick={() => {
-                        handleClickDetails(item);
-                      }}
-                    />
-                    <IoCartOutline
-                      className="btn"
-                      onClick={() => {
-                        addToCart(item);
-                      }}
-                    />
-                  </div>
+                  <span>{item.rate}</span>
                 </div>
               </div>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+              <div className="content">
+                <div>
+                  <h3>{item.name}</h3>
+                  <p>{item.price}</p>
+                </div>
+                <div className="item-btns">
+                  <MdOutlineReadMore
+                    className="btn"
+                    onClick={() => {
+                      handleClickDetails(item);
+                    }}
+                  />
+                  <IoCartOutline
+                    className="btn"
+                    onClick={() => {
+                      addToCart(item);
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
 
       {!showAll ? (
