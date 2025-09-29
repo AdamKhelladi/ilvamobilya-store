@@ -27,8 +27,7 @@ function AppContent() {
 
   const location = useLocation();
   const hideFooter =
-    location.pathname === "/cart" ||
-    !["/", "/product"].some((path) => location.pathname.startsWith(path));
+    location.pathname === "/cart" || location.pathname.startsWith("/product");
 
   function handleShowMenu() {
     const newState = !showMenu;
