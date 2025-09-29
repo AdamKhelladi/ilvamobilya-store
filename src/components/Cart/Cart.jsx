@@ -126,17 +126,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                   />
                 </div>
 
-                <div>
-                  <MdOutlineMail className="icon" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+
 
                 <div>
                   <MdOutlinePhone className="icon" />
