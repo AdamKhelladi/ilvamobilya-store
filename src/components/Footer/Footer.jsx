@@ -8,6 +8,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTiktok } from "react-icons/io5";
 
+import { motion } from "framer-motion";
+
 export default function Footer() {
   const FooterLinks = [
     { id: 1, name: "Home", link: "/#home" },
@@ -17,7 +19,13 @@ export default function Footer() {
   ];
 
   return (
-    <div className="footer-container">
+    <motion.div
+      className="footer-container"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.2 }}
+    >
       <div className="container">
         <div className="content">
           <div className="left-footer">
@@ -53,10 +61,16 @@ export default function Footer() {
                   <p>+213 676100627</p>
                 </div>
                 <div className="social-media">
-                  <a href="https://www.instagram.com/ilvamobilya" target="_blank">
+                  <a
+                    href="https://www.instagram.com/ilvamobilya"
+                    target="_blank"
+                  >
                     <FaInstagram className="icon" />
                   </a>
-                  <a href="https://www.facebook.com/ilvamobilya" target="_blank">
+                  <a
+                    href="https://www.facebook.com/ilvamobilya"
+                    target="_blank"
+                  >
                     <FaFacebookF className="icon" />
                   </a>
                   <a href="https://www.tiktok.com/ilvamobilya" target="_blank">
@@ -74,6 +88,6 @@ export default function Footer() {
           <p>Made with 🤎 by @adxmtech</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

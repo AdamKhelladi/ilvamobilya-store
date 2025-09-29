@@ -71,8 +71,8 @@ export default function Categories() {
               className={`img-${item.id}`}
               src={item.img}
               alt={item.title}
-              initial={{ scale: 0.6, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
+              initial={{opacity: 0 }}
+              whileInView={{opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: false, amount: 0.2 }}
             />

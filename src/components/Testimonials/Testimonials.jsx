@@ -12,23 +12,55 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import { motion } from "framer-motion";
+
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 export default function Testimonials() {
   return (
-    <div className="testimonials-container" id="testimonials">
+    <motion.div
+      className="testimonials-container"
+      id="testimonials"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="testimonials-title">
-        <h1>Client Satisfaction</h1>
-        <p className="first-p">What our customers say about us</p>
-        <p className="second-p">
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Client Satisfaction
+        </motion.h1>
+        <motion.p
+          className="first-p"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          What our customers say about us
+        </motion.p>
+        <motion.p
+          className="second-p"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           We take pride in delivering high-quality products and services that
           bring comfort and style to our clients. Every piece is carefully
           designed with attention to detail.
-        </p>
-        <p className="second-p">
+        </motion.p>
+        <motion.p
+          className="second-p"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           The kind words from our customers inspire us to keep improving and
           providing an exceptional experience for everyone we serve.
-        </p>
+        </motion.p>
       </div>
 
       <Swiper
@@ -74,6 +106,6 @@ export default function Testimonials() {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
