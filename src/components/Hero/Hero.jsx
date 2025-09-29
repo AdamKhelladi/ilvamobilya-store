@@ -7,6 +7,8 @@ import Image1 from "../../assets/hero/home-img-1.png";
 import Image2 from "../../assets/hero/home-img-4.png";
 import Image3 from "../../assets/hero/home-img-6.png";
 
+import { motion } from "framer-motion";
+
 export default function Hero() {
   const HeroData = [
     {
@@ -54,45 +56,45 @@ export default function Hero() {
           {HeroData.map((item) => (
             <div key={item.id} className="slider-content">
               <div className="details">
-                <h3
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                  data-aos-once="true"
+                <motion.h3
+                  initial={{ scale: 1.5, opacity: 0.2 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   {item.subtitle}
-                </h3>
-                <h1
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                  data-aos-once="true"
+                </motion.h3>
+                <motion.h1
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   {item.title}
-                </h1>
-                <p
-                  data-aos="zoom-out"
-                  data-aos-duration="500"
-                  data-aos-once="true"
+                </motion.h1>
+                <motion.p
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   {item.Description}
-                </p>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-offset="0"
-                  data-aos-delay="300"
+                </motion.p>
+                <motion.div
+                  initial={{ y: 100, opacity: 0.2 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
                 >
                   <button>
                     <a href="#categories">Shop By Category</a>
                   </button>
-                </div>
+                </motion.div>
               </div>
-              <div
-                data-aos="zoom-out"
-                data-aos-once="true"
+              <motion.div
                 className="slide-img"
+                initial={{ scale: 1.2, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               >
-                <img className={`img-${item.id}`} src={item.img} />
-              </div>
+                <img src={item.img} />
+              </motion.div>
             </div>
           ))}
         </Slider>
