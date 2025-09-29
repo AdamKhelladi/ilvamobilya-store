@@ -8,6 +8,8 @@ import { MdOutlineMail } from "react-icons/md";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
+import { motion } from "framer-motion";
+
 export default function Cart({ cartItems, deleteItem, orders }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [formData, setFormData] = useState({
@@ -59,21 +61,40 @@ export default function Cart({ cartItems, deleteItem, orders }) {
   return (
     <div className="container">
       <div className="cart-container">
-        <div className="cart-left">
+        <motion.div
+          className="cart-left"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <div className="cart-content">
             <div className="cart-products">
               <div className="cart-left-title">
-                <IoCartOutline className="cart-icon"/>
+                <IoCartOutline className="cart-icon" />
                 <h3>Your Cart ({orders})</h3>
               </div>
-              
+
               {cartItems.length < 1 ? (
-                <p className="cart-empty-msg">
+                <motion.p
+                  className="cart-empty-msg"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
                   Your cart is empty 🛒 — start shopping now!
-                </p>
+                </motion.p>
               ) : (
                 cartItems.map((item) => (
-                  <div key={item.id} className="cart-item">
+                  <motion.div
+                    key={item.id}
+                    className="cart-item"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                  >
                     <img src={item.img} alt={item.name} />
                     <div className="item-content">
                       <div>
@@ -88,23 +109,41 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                         }}
                       />
                     </div>
-                  </div>
+                  </motion.div>
                 ))
               )}
             </div>
             {cartItems.length > 0 ? (
-              <div className="coupon">
+              <motion.div
+                className="coupon"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
                 <input type="text" placeholder="Enter coupon" />
                 <button>Apply coupon</button>
-              </div>
+              </motion.div>
             ) : null}
           </div>
-        </div>
+        </motion.div>
         <div className="cart-right">
-          <div className="total-price">
+          <motion.div
+            className="total-price"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             Total Price: <span>{totalPrice}</span> DZD
-          </div>
-          <div className="payment-info">
+          </motion.div>
+          <motion.div
+            className="payment-info"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             <h3>Payment Details</h3>
 
             <div className="client-infos">
@@ -125,8 +164,6 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                     required
                   />
                 </div>
-
-
 
                 <div>
                   <MdOutlinePhone className="icon" />
@@ -187,7 +224,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                 />
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
