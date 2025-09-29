@@ -279,7 +279,7 @@
   /* color: var(--text-primary); */
   color: rgb(28, 28, 248);
   display: inline-block;
-  animation: down .8s infinite ease-in-out;
+  animation: down 0.8s infinite ease-in-out;
 }
 
 @keyframes down {
@@ -312,6 +312,12 @@
   .product-details .content {
     width: 100%;
     max-width: 330px;
+  }
+  .products-content .product-content .item .item-content h3 {
+    font-size: 25px;
+  }
+  .products-content .product-content .item .item-content p:first-child {
+    font-size: 17px;
   }
   .product-details .details-content h3 {
     margin: 10px 0 0px;

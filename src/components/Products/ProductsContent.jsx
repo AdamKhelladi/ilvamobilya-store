@@ -68,3 +68,4 @@ export default function ProductsContent({ contentData, addToCart }) {
     </div>
   );
 }
+

@@ -46,6 +46,8 @@ import diningTableImage3 from "../../assets/products/DiningTableModels/model-3.j
 import diningTableImage4 from "../../assets/products/DiningTableModels/model-4.jpg";
 import diningTableImage5 from "../../assets/products/DiningTableModels/model-5.jpg";
 
+import { v4 as uuidv4 } from "uuid";
+
 export const productsCategoriesData = [
   {
     id: 1,
@@ -269,8 +271,8 @@ export const sofasData = [
 
 export const coffeeTablesData = [
   {
-    id: 1,
-    name: "MDF Luxury Marble",
+    id: 100,
+    name: "MDF Luxury Marble 1",
     price: "20,000 DZD",
     img: coffeeTableImage1,
     rate: "4.8",
@@ -279,8 +281,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 2,
-    name: "Rounded Wooden",
+    id: 101,
+    name: "Rounded Wooden 1",
     price: "10,000 DZD",
     img: coffeeTableImage2,
     rate: "4.2",
@@ -289,8 +291,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 3,
-    name: "MDF Luxury Marble",
+    id: 102,
+    name: "MDF Luxury Marble 2",
     price: "10,000 DZD",
     img: coffeeTableImage3,
     rate: "4.6",
@@ -299,7 +301,7 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 4,
+    id: 103,
     name: "Classic Oak",
     price: "12,000 DZD",
     img: coffeeTableImage4,
@@ -309,8 +311,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 5,
-    name: "MDF Luxury Marble",
+    id: 104,
+    name: "MDF Luxury Marble 3",
     price: "20,000 DZD",
     img: coffeeTableImage5,
     rate: "4.9",
@@ -319,8 +321,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 6,
-    name: "Rounded Wooden",
+    id: 105,
+    name: "Rounded Wooden 2",
     price: "10,000 DZD",
     img: coffeeTableImage6,
     rate: "4.1",
@@ -329,8 +331,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 7,
-    name: "Rounded Wooden",
+    id: 106,
+    name: "Rounded Wooden 3",
     price: "10,000 DZD",
     img: coffeeTableImage7,
     rate: "4.7",
@@ -339,8 +341,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 8,
-    name: "MDF Luxury Marble",
+    id: 107,
+    name: "MDF Luxury Marble 4",
     price: "20,000 DZD",
     img: coffeeTableImage8,
     rate: "4.4",
@@ -349,7 +351,7 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 9,
+    id: 108,
     name: "Luxury Marble",
     price: "120,000 DZD",
     img: coffeeTableImage9,
@@ -359,8 +361,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 10,
-    name: "Glass Top",
+    id: 109,
+    name: "Glass Top 1",
     price: "22,000 DZD",
     img: coffeeTableImage10,
     rate: "4.0",
@@ -369,8 +371,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02KiChLPhXhJssJYALERZERpwnYadge8eTHGfTqMLB8gGWWjVNjS37CbxqWx8MzRN5l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 11,
-    name: "MDF Luxury Marble",
+    id: 110,
+    name: "MDF Luxury Marble 5",
     price: "20,000 DZD",
     img: coffeeTableImage11,
     rate: "4.6",
@@ -379,8 +381,8 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 12,
-    name: "Glass Top",
+    id: 111,
+    name: "Glass Top 2",
     price: "15,000 DZD",
     img: coffeeTableImage12,
     rate: "4.3",
@@ -392,8 +394,8 @@ export const coffeeTablesData = [
 
 export const diningTablesData = [
   {
-    id: 1,
-    name: "Glass Top",
+    id: 200,
+    name: "Glass Top 1",
     price: "40,000 DZD",
     img: diningTableImage1,
     rate: "4.7",
@@ -402,8 +404,8 @@ export const diningTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0naJZqqmCLVNJoGZmQ8upd1nywMSMZ8D3mW8HzrZtMJyWVSgcqxmk3gB1GADvzoKxl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 2,
-    name: "Glass Top",
+    id: 201,
+    name: "Glass Top 2",
     price: "40,000 DZD",
     img: diningTableImage2,
     rate: "4.3",
@@ -412,8 +414,8 @@ export const diningTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0GWyx8evpmqi9rHRGH6VeQFXs4aqFrSdTn3MXrnzx3XxWSvzJGKQfVQNSK1XLxaV9l%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 3,
-    name: "MDF Luxury Marble",
+    id: 202,
+    name: "MDF Luxury Marble 1",
     price: "48,000 DZD",
     img: diningTableImage3,
     rate: "4.6",
@@ -422,7 +424,7 @@ export const diningTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0HyHwf7aqUbHbESFUM5QqitH49aC3EHRVgf741enW2FAqXb5kbSP4idojQ41J3aREl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 4,
+    id: 203,
     name: "Rounded Wooden",
     price: "42,000 DZD",
     img: diningTableImage4,
@@ -432,8 +434,8 @@ export const diningTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ehUfa5hvxzXXtAtZGpYYtpBpQyuhPW57ekAZnYFpSDGewvkVBdGj3gMtY6WcPfidl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 5,
-    name: "MDF Luxury Marble",
+    id: 204,
+    name: "MDF Luxury Marble 2",
     price: "48,000 DZD",
     img: diningTableImage5,
     rate: "4.8",

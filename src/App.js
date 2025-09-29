@@ -49,29 +49,23 @@ function AppContent() {
   }
 
   function addToCart(item) {
-    let cart = getCartFromLocalStorage();
-
-    let uniqueKey = `${item.category}-${item.id}`;
-
-    if (
-      !cart.some((product) => `${product.category}-${product.id}` === uniqueKey)
-    ) {
-      cart.push(item);
-      localStorage.setItem("cartItems", JSON.stringify(cart));
-
-      setCartItems(cart);
-    }
+    setCartItems((prev) => {
+      if (!prev.some((product) => product.id === item.id)) {
+        const updated = [...prev, item];
+        localStorage.setItem("cartItems", JSON.stringify(updated));
+        return updated;
+      }
+      return prev;
+    });
   }
 
   function deleteItem(item) {
-    let currentCart = getCartFromLocalStorage();
-    currentCart = currentCart.filter(
-      (product) =>
-        `${product.category}-${product.id}` !== `${item.category}-${item.id}`
-    );
-    localStorage.setItem("cartItems", JSON.stringify(currentCart));
+    setCartItems((prev) => {
+      const updated = prev.filter((product) => product.id !== item.id);
+      localStorage.setItem("cartItems", JSON.stringify(updated));
 
-    setCartItems(currentCart);
+      return updated;
+    });
   }
 
   useEffect(() => {
