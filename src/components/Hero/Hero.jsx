@@ -50,7 +50,13 @@ export default function Hero() {
   };
 
   return (
-    <div className="hero-container">
+    <motion.div
+      className="hero-container"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div>
         <Slider {...settings} className="slider">
           {HeroData.map((item) => (
@@ -99,6 +105,6 @@ export default function Hero() {
           ))}
         </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 }

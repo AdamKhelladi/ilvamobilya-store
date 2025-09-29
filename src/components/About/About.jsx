@@ -2,15 +2,24 @@ import "./About.css";
 import Image from "../../assets/about/about-img.jpg";
 import Image2 from "../../assets/about/about-img-phone-3.jpg";
 
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
-    <div className="about-container" id="about">
+    <motion.div
+      className="about-container"
+      id="about"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="about-images">
         <img src={Image} alt="About us image" />
       </div>
       <div className="about-infos">
         <h1>About Us</h1>
-        <img className="about-img-phone" src={Image2}/>
+        <img className="about-img-phone" src={Image2} />
         <p>
           Founded 2 years ago, IlvaMobilya has grown from a small workshop into
           a trusted name in Algeria for high-quality furniture. We specialize in
@@ -34,6 +43,6 @@ export default function About() {
           <a href="#products">Our Products</a>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }

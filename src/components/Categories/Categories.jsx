@@ -3,6 +3,8 @@ import Image1 from "../../assets/category/category-img-4.png";
 import Image2 from "../../assets/category/category-img-2.png";
 import Image3 from "../../assets/category/category-img-3.png";
 
+import { motion } from "framer-motion";
+
 export default function Categories() {
   const categoryData = [
     {
@@ -38,11 +40,42 @@ export default function Categories() {
             className={item.id === 1 ? "category-item wide" : "category-item"}
           >
             <div className="details">
-              <div className="types-number">{item.type}</div>
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
+              <motion.div
+                className="types-number"
+                initial={{ scale: 0.3, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+                viewport={{ once: false, amount: 0.2 }}
+              >
+                {item.type}
+              </motion.div>
+              <motion.h1
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+              >
+                {item.title}
+              </motion.h1>
+              <motion.p
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false, amount: 0.2 }}
+              >
+                {item.description}
+              </motion.p>
             </div>
-            <img className={`img-${item.id}`} src={item.img} alt={item.title} />
+
+            <motion.img
+              className={`img-${item.id}`}
+              src={item.img}
+              alt={item.title}
+              initial={{ scale: 0.6, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+              viewport={{ once: false, amount: 0.2 }}
+            />
           </div>
         ))}
       </div>

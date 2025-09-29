@@ -4,6 +4,8 @@ import { CiMoneyCheck1 } from "react-icons/ci";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { LiaTelegramPlane } from "react-icons/lia";
 
+import { motion } from "framer-motion";
+
 export default function Services() {
   const servicesData = [
     {
@@ -16,7 +18,8 @@ export default function Services() {
       id: 2,
       icon: <CiMoneyCheck1 />,
       title: "CASH ON DELIVERY",
-      description: "Pay easily at your doorstep with our cash on delivery option.",
+      description:
+        "Pay easily at your doorstep with our cash on delivery option.",
     },
     {
       id: 3,
@@ -33,18 +36,23 @@ export default function Services() {
   ];
 
   return (
-    <div className="services-container" id="services">
-      {
-        servicesData.map((item) => (
-          <div key={item.id} className="service">
-            <div className="service-icon">{item.icon}</div>
-            <div className="details">
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
-            </div>
+    <motion.div
+      className="services-container"
+      id="services"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      {servicesData.map((item) => (
+        <div key={item.id} className="service">
+          <div className="service-icon">{item.icon}</div>
+          <div className="details">
+            <h1>{item.title}</h1>
+            <p>{item.description}</p>
           </div>
-        ))
-      }
-    </div>
-  )
+        </div>
+      ))}
+    </motion.div>
+  );
 }

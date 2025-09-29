@@ -6,6 +6,9 @@ import { IoCartOutline } from "react-icons/io5";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+
 export default function ProductsContent({ contentData, addToCart }) {
   const [showAll, setShowAll] = useState(false);
   const navigate = useNavigate();
@@ -17,47 +20,59 @@ export default function ProductsContent({ contentData, addToCart }) {
   }
 
   function handleClickDetails(currentItem) {
-    navigate(`/product/${currentItem.id}`, {state: currentItem})
+    navigate(`/product/${currentItem.id}`, { state: currentItem });
   }
 
   return (
     <div style={{ position: "relative" }}>
       <div className="product-content">
-        {displayedProducts.map((item) => (
-          <div key={item.id} className="item">
-            <div className="item-img">
-              <img src={item.img} alt={item.name} />
-            </div>
-            <div className="item-content">
-              <div className="stars-rate">
-                <p>{item.category}</p>
-                <div className="rate">
-                  <div className="star">
-                    <FaStar />
+        <AnimatePresence>
+          {displayedProducts.map((item) => (
+            <motion.div
+              key={item.id}
+              className="item"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="item-img">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="item-content">
+                <div className="stars-rate">
+                  <p>{item.category}</p>
+                  <div className="rate">
+                    <div className="star">
+                      <FaStar />
+                    </div>
+                    <span>{item.rate}</span>
                   </div>
-                  <span>{item.rate}</span>
+                </div>
+                <div className="content">
+                  <div>
+                    <h3>{item.name}</h3>
+                    <p>{item.price}</p>
+                  </div>
+                  <div className="item-btns">
+                    <MdOutlineReadMore
+                      className="btn"
+                      onClick={() => {
+                        handleClickDetails(item);
+                      }}
+                    />
+                    <IoCartOutline
+                      className="btn"
+                      onClick={() => {
+                        addToCart(item);
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="content">
-                <div>
-                  <h3>{item.name}</h3>
-                  <p>{item.price}</p>
-                </div>
-                <div className="item-btns">
-                  <MdOutlineReadMore
-                    className="btn"
-                    onClick={() => {
-                      handleClickDetails(item);
-                    }}
-                  />
-                  <IoCartOutline className="btn" onClick={() => {
-                    addToCart(item);
-                  }}/>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
 
       {!showAll ? (
@@ -68,4 +83,3 @@ export default function ProductsContent({ contentData, addToCart }) {
     </div>
   );
 }
-
