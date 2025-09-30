@@ -20,7 +20,7 @@
 .products-container .products-categories .category {
   border: 2px solid var(--gradient-color-two);
   height: 40px;
-  border-radius: 16px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;

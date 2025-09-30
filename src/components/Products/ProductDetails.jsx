@@ -3,6 +3,8 @@ import "./Products.css";
 import { FaStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 
+import { motion } from "framer-motion";
+
 export default function ProductDetails({ addToCart }) {
   const { id } = useParams();
   const { state: product } = useLocation();
@@ -13,7 +15,13 @@ export default function ProductDetails({ addToCart }) {
   return (
     <div className="container">
       <div className="product-details">
-        <div className="content">
+        <motion.div
+          className="content"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <div className="stars-rate">
             <p>{product.category}</p>
             <div className="rate">
@@ -35,11 +43,25 @@ export default function ProductDetails({ addToCart }) {
               }}
             />
           </div>
-        </div>
+        </motion.div>
 
-        <p className="more-on-fb">🢃 Check full details on Facebook 🢃</p>
+        <motion.p
+          className="more-on-fb"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          🢃 Click to see more details on Facebook 🢃
+        </motion.p>
 
-        <div class="fb-post">
+        <motion.div
+          class="fb-post"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <iframe
             className="post-frame"
             src={product.fbLink}
@@ -51,7 +73,7 @@ export default function ProductDetails({ addToCart }) {
             allowfullscreen="true"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
