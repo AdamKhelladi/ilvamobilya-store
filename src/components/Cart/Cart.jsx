@@ -28,20 +28,9 @@ export default function Cart({ cartItems, deleteItem, orders }) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form),
-      headers: { Accept: "application/json" },
-    }).then((response) => {
-      if (response.ok) {
-        localStorage.removeItem("cartItems");
-        setFormData({ name: "", phone: "", address: "", message: "" });
-      }
-    });
+  function handleSubmit() {
+    localStorage.removeItem("cartItems");
+    setFormData({ name: "", phone: "", address: "", message: "" });
   }
 
   useEffect(() => {
@@ -208,7 +197,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                     />
                     <input
                       type="hidden"
-                      name={`category`}
+                      name={`product_${index + 1}_category`}
                       value={item.category}
                     />
                     <input
