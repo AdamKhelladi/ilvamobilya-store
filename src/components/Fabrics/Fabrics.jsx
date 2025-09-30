@@ -57,22 +57,22 @@ export default function Fabrics() {
         className="swiper-container"
       >
         <SwiperSlide>
-          <img src={Image1} alt="fabrics image" />
+          <img src={Image1} alt="FabricsIma" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image2} alt="fabrics image" />
+          <img src={Image2} alt="FabricsIma" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image3} alt="fabrics image" />
+          <img src={Image3} alt="FabricsIma" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image4} alt="fabrics image" />
+          <img src={Image4} alt="FabricsIma" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image5} alt="fabrics image" />
+          <img src={Image5} alt="FabricsIma" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image6} alt="fabrics image" />
+          <img src={Image6} alt="FabricsIma" />
         </SwiperSlide>
 
         <div className="slider-controler">

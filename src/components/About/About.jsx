@@ -15,11 +15,11 @@ export default function About() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="about-images">
-        <img src={Image} alt="About us image" />
+        <img src={Image} alt="AboutImg" />
       </div>
       <div className="about-infos">
         <h1>About Us</h1>
-        <img className="about-img-phone" src={Image2} />
+        <img className="about-img-phone" src={Image2} alt="AboutImg" />
         <p>
           Founded 2 years ago, IlvaMobilya has grown from a small workshop into
           a trusted name in Algeria for high-quality furniture. We specialize in
@@ -29,12 +29,12 @@ export default function About() {
         <p>
           What makes us different is our dedication to every detail. From
           carefully selected materials to skilled craftsmanship, we make sure
-          each piece is strong, stylish, and built to last. Whether you’re
+          each piece is strong, stylish, and built to last. Whether you are
           looking for luxury, affordability, or unique custom designs—we cover
           it all.
         </p>
         <p>
-          As a local Algerian brand, we’re proud to serve homes across the
+          As a local Algerian brand, we are proud to serve homes across the
           country with furniture that brings families together. Our mission is
           simple: to create beautiful, functional, and lasting pieces that make
           your home more welcoming every day.

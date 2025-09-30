@@ -64,6 +64,7 @@ export default function ProductDetails({ addToCart }) {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <iframe
+            title="Product demo video"
             className="post-frame"
             src={product.fbLink}
             width="500"

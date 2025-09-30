@@ -34,8 +34,6 @@ import coffeeTableImage5 from "../../assets/products/CoffeeTableModels/model-5.j
 import coffeeTableImage6 from "../../assets/products/CoffeeTableModels/model-6.jpg";
 import coffeeTableImage7 from "../../assets/products/CoffeeTableModels/model-7.jpg";
 import coffeeTableImage8 from "../../assets/products/CoffeeTableModels/model-8.jpg";
-import coffeeTableImage9 from "../../assets/products/CoffeeTableModels/model-9.jpg";
-import coffeeTableImage10 from "../../assets/products/CoffeeTableModels/model-10.jpg";
 import coffeeTableImage11 from "../../assets/products/CoffeeTableModels/model-11.jpg";
 import coffeeTableImage12 from "../../assets/products/CoffeeTableModels/model-12.jpg";
 
@@ -45,8 +43,6 @@ import diningTableImage2 from "../../assets/products/DiningTableModels/model-2.j
 import diningTableImage3 from "../../assets/products/DiningTableModels/model-3.jpg";
 import diningTableImage4 from "../../assets/products/DiningTableModels/model-4.jpg";
 import diningTableImage5 from "../../assets/products/DiningTableModels/model-5.jpg";
-
-import { v4 as uuidv4 } from "uuid";
 
 export const productsCategoriesData = [
   {

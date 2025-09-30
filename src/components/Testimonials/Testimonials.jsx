@@ -84,22 +84,22 @@ export default function Testimonials() {
         className="swiper-container"
       >
         <SwiperSlide>
-          <img src={Image1} alt="Testimonials image" />
+          <img src={Image1} alt="TestimonialsImg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image2} alt="Testimonials image" />
+          <img src={Image2} alt="TestimonialsImg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image3} alt="Testimonials image" />
+          <img src={Image3} alt="TestimonialsImg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image4} alt="Testimonials image" />
+          <img src={Image4} alt="TestimonialsImg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image5} alt="Testimonials image" />
+          <img src={Image5} alt="TestimonialsImg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Image6} alt="Testimonials image" />
+          <img src={Image6} alt="TestimonialsImg" />
         </SwiperSlide>
 
         <div className="slider-controler">

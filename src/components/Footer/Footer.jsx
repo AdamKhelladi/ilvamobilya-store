@@ -64,16 +64,18 @@ export default function Footer() {
                   <a
                     href="https://www.instagram.com/ilvamobilya"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaInstagram className="icon" />
                   </a>
                   <a
                     href="https://www.facebook.com/ilvamobilya"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaFacebookF className="icon" />
                   </a>
-                  <a href="https://www.tiktok.com/ilvamobilya" target="_blank">
+                  <a href="https://www.tiktok.com/ilvamobilya" target="_blank" rel="noreferrer">
                     <IoLogoTiktok className="icon" />
                   </a>
                 </div>
