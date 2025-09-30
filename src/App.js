@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "./components/Navbar/Menu";
 import Hero from "./components/Hero/Hero";
 import Categories from "./components/Categories/Categories";
