@@ -125,6 +125,7 @@
   .categories-container {
     height: 100%;
     padding-top: 50px;
+    margin-top: 0;
   }
   .categories-container .items {
     display: flex;

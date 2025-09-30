@@ -272,8 +272,8 @@ export const sofasData = [
 export const coffeeTablesData = [
   {
     id: 100,
-    name: "MDF Luxury Marble 1",
-    price: "20,000 DZD",
+    name: "MDF Marble 1",
+    price: "33,000 DZD",
     img: coffeeTableImage1,
     rate: "4.8",
     category: "Coffee Table",
@@ -283,7 +283,7 @@ export const coffeeTablesData = [
   {
     id: 101,
     name: "Rounded Wooden 1",
-    price: "10,000 DZD",
+    price: "17,000 DZD",
     img: coffeeTableImage2,
     rate: "4.2",
     category: "Coffee Table",
@@ -292,8 +292,8 @@ export const coffeeTablesData = [
   },
   {
     id: 102,
-    name: "MDF Luxury Marble 2",
-    price: "10,000 DZD",
+    name: "MDF Marble 2",
+    price: "35,000 DZD",
     img: coffeeTableImage3,
     rate: "4.6",
     category: "Coffee Table",
@@ -302,8 +302,8 @@ export const coffeeTablesData = [
   },
   {
     id: 103,
-    name: "Classic Oak",
-    price: "12,000 DZD",
+    name: "Classic Table",
+    price: "18,000 DZD",
     img: coffeeTableImage4,
     rate: "4.3",
     category: "Coffee Table",
@@ -312,8 +312,8 @@ export const coffeeTablesData = [
   },
   {
     id: 104,
-    name: "MDF Luxury Marble 3",
-    price: "20,000 DZD",
+    name: "MDF Marble 3",
+    price: "35,000 DZD",
     img: coffeeTableImage5,
     rate: "4.9",
     category: "Coffee Table",
@@ -322,8 +322,8 @@ export const coffeeTablesData = [
   },
   {
     id: 105,
-    name: "Rounded Wooden 2",
-    price: "10,000 DZD",
+    name: "Bois Hetre",
+    price: "26,000 DZD",
     img: coffeeTableImage6,
     rate: "4.1",
     category: "Coffee Table",
@@ -332,8 +332,8 @@ export const coffeeTablesData = [
   },
   {
     id: 106,
-    name: "Rounded Wooden 3",
-    price: "10,000 DZD",
+    name: "Rounded MDF",
+    price: "29,000 DZD",
     img: coffeeTableImage7,
     rate: "4.7",
     category: "Coffee Table",
@@ -342,8 +342,8 @@ export const coffeeTablesData = [
   },
   {
     id: 107,
-    name: "MDF Luxury Marble 4",
-    price: "20,000 DZD",
+    name: "MDF Marble 4",
+    price: "35,000 DZD",
     img: coffeeTableImage8,
     rate: "4.4",
     category: "Coffee Table",
@@ -351,29 +351,9 @@ export const coffeeTablesData = [
       "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
   },
   {
-    id: 108,
-    name: "Luxury Marble",
-    price: "120,000 DZD",
-    img: coffeeTableImage9,
-    rate: "4.5",
-    category: "Coffee Table",
-    fbLink:
-      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0369zq4ATpw13h3cUTRuLpixsRkKU9RF3GLbZgQH5Sxmr3fQByEA1tXP7r3drQotmPl%26id%3D61572166948470&show_text=true&width=500",
-  },
-  {
-    id: 109,
-    name: "Glass Top 1",
-    price: "22,000 DZD",
-    img: coffeeTableImage10,
-    rate: "4.0",
-    category: "Coffee Table",
-    fbLink:
-      "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02KiChLPhXhJssJYALERZERpwnYadge8eTHGfTqMLB8gGWWjVNjS37CbxqWx8MzRN5l%26id%3D61572166948470&show_text=true&width=500",
-  },
-  {
     id: 110,
-    name: "MDF Luxury Marble 5",
-    price: "20,000 DZD",
+    name: "MDF Marble 5",
+    price: "35,000 DZD",
     img: coffeeTableImage11,
     rate: "4.6",
     category: "Coffee Table",
@@ -382,7 +362,7 @@ export const coffeeTablesData = [
   },
   {
     id: 111,
-    name: "Glass Top 2",
+    name: "Glass Table Base",
     price: "15,000 DZD",
     img: coffeeTableImage12,
     rate: "4.3",
@@ -395,8 +375,8 @@ export const coffeeTablesData = [
 export const diningTablesData = [
   {
     id: 200,
-    name: "Glass Top 1",
-    price: "40,000 DZD",
+    name: "Glass Table",
+    price: "65,000 DZD",
     img: diningTableImage1,
     rate: "4.7",
     category: "Dining Table",
@@ -405,8 +385,8 @@ export const diningTablesData = [
   },
   {
     id: 201,
-    name: "Glass Top 2",
-    price: "40,000 DZD",
+    name: "Glass Table",
+    price: "65,000 DZD",
     img: diningTableImage2,
     rate: "4.3",
     category: "Dining Table",
@@ -415,8 +395,8 @@ export const diningTablesData = [
   },
   {
     id: 202,
-    name: "MDF Luxury Marble 1",
-    price: "48,000 DZD",
+    name: "Luxury Marble",
+    price: "55,000 DZD",
     img: diningTableImage3,
     rate: "4.6",
     category: "Dining Table",
@@ -426,7 +406,7 @@ export const diningTablesData = [
   {
     id: 203,
     name: "Rounded Wooden",
-    price: "42,000 DZD",
+    price: "55,000 DZD",
     img: diningTableImage4,
     rate: "4.1",
     category: "Dining Table",
@@ -435,8 +415,8 @@ export const diningTablesData = [
   },
   {
     id: 204,
-    name: "MDF Luxury Marble 2",
-    price: "48,000 DZD",
+    name: "Luxury Marble",
+    price: "55,000 DZD",
     img: diningTableImage5,
     rate: "4.8",
     category: "Dining Table",
