@@ -223,7 +223,7 @@
 .product-details .content {
   width: 100%;
   max-width: 460px;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid var(--border-color);
 }
@@ -239,8 +239,8 @@
 }
 
 .product-details .details-content h3 {
-  margin: 30px 0 10px;
-  font-size: 27px;
+  margin: 10px 0 5px;
+  font-size: 25px;
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -1px;
@@ -248,7 +248,7 @@
 
 .product-details .details-content p {
   margin: 5px 0 0;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 700;
   color: var(--text-secondary);
 }

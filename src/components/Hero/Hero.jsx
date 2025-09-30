@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Image1 from "../../assets/hero/home-img-1.png";
 import Image2 from "../../assets/hero/home-img-4.png";
-import Image3 from "../../assets/hero/home-img-6.png";
+import Image3 from "../../assets/hero/home-img-2.png";
 
 import { motion } from "framer-motion";
 
@@ -99,7 +99,7 @@ export default function Hero() {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               >
-                <img src={item.img} />
+                <img src={item.img} className={`img-${item.id}`}/>
               </motion.div>
             </div>
           ))}

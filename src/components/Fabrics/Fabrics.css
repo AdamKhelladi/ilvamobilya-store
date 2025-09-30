@@ -1,38 +1,42 @@
-.testimonials-container {
+.fabrics-container {
   width: 930px;
-  padding: 50px 0;
+
   display: block;
-  margin: 50px auto 0;
+  margin: 0 auto;
   text-align: center;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   gap: 30px;
+
+  width: 400px;
 }
 
-.testimonials-container .testimonials-title {
+.fabrics-container .fabrics-title {
   text-align: start;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   width: 100%;
   max-width: 600px;
 }
 
-.testimonials-container h1 {
+.fabrics-container h1 {
   margin: 0;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 27px;
+  font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -1px;
+  text-align: center;
 }
 
-.testimonials-container .testimonials-title .first-p {
+.fabrics-container .fabrics-title .first-p {
   font-size: 17px;
   color: #888;
   margin: 0 0 20px;
 }
 
-.testimonials-container .testimonials-title .second-p {
+.fabrics-container .fabrics-title .second-p {
   font-size: 17px;
   margin: 8px 0 0;
   color: var(--text-secondary);
@@ -41,8 +45,7 @@
 /* Swiper Container */
 .swiper-container {
   width: 100%;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
+  max-width: 400px;
 }
 
 /* Slides */
@@ -76,7 +79,7 @@
 /* Pagination dots */
 .swiper-pagination-bullet {
   background: var(--text-primary) !important;
-  opacity: .3 !important;
+  opacity: 0.3 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -90,16 +93,15 @@
   margin-top: 30px;
 }
 
-
 @media (max-width: 1000px) {
-  .testimonials-container {
+  .fabrics-container {
     width: 450px;
     display: block;
     padding: 50px 0;
     margin: 0 auto;
     text-align: center;
   }
-  .testimonials-container .testimonials-title {
+  .fabrics-container .fabrics-title {
     text-align: center;
   }
   .swiper-slide img {
@@ -109,7 +111,7 @@
 }
 
 @media (max-width: 600px) {
-  .testimonials-container {
+  .fabrics-container {
     width: 350px;
     display: block;
     padding: 50px 0;
@@ -120,14 +122,14 @@
     width: 100%;
     max-width: 320px;
   }
-  .testimonials-container .testimonials-title {
+  .fabrics-container .fabrics-title {
     text-align: start;
     margin-bottom: 20px;
   }
-  .testimonials-container h1 {
+  .fabrics-container h1 {
     font-size: 35px;
   }
-  .testimonials-container .testimonials-title .testimonials-p {
+  .fabrics-container .fabrics-title .fabrics-p {
     font-size: 15px;
   }
 }

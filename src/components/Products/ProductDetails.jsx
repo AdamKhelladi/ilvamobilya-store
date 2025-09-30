@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 
 import { motion } from "framer-motion";
+import Fabrics from "../Fabrics/Fabrics";
 
 export default function ProductDetails({ addToCart }) {
   const { id } = useParams();
@@ -74,6 +75,8 @@ export default function ProductDetails({ addToCart }) {
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </motion.div>
+
+        <Fabrics />
       </div>
     </div>
   );
