@@ -4,7 +4,6 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 
 import { IoPersonOutline } from "react-icons/io5";
-import { MdOutlineMail } from "react-icons/md";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -14,15 +13,14 @@ export default function Cart({ cartItems, deleteItem, orders }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     address: "",
+    message: "",
   });
 
   const isFormValid =
     cartItems.length > 0 &&
     formData.name.trim() &&
-    formData.email.trim() &&
     formData.phone.trim() &&
     formData.address.trim();
 
@@ -41,10 +39,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
     }).then((response) => {
       if (response.ok) {
         localStorage.removeItem("cartItems");
-        setFormData({ name: "", email: "", phone: "", address: "" });
-        alert("Order sent successfully ✅");
-      } else {
-        alert("Something went wrong ❌");
+        setFormData({ name: "", phone: "", address: "", message: "" });
       }
     });
   }
@@ -52,7 +47,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
   useEffect(() => {
     let total = cartItems.reduce((acc, item) => {
       let clearPrice = item.price.replace(/[^0-9.]/g, "");
-      return acc + parseInt(clearPrice);
+      return acc + parseFloat(clearPrice);
     }, 0);
 
     setTotalPrice(total.toLocaleString());
@@ -149,7 +144,7 @@ export default function Cart({ cartItems, deleteItem, orders }) {
             <div className="client-infos">
               <form
                 className="form"
-                action=""
+                action="https://formspree.io/f/mvgwawdl"
                 method="POST"
                 onSubmit={handleSubmit}
               >
@@ -185,12 +180,14 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                     placeholder="Address"
                     value={formData.address}
                     onChange={handleChange}
+                    required
                   />
                 </div>
 
                 <textarea
                   name="message"
                   placeholder="Write more details about the products you ordered.."
+                  value={formData.message || ""}
                   onChange={handleChange}
                 />
 
@@ -203,11 +200,16 @@ export default function Cart({ cartItems, deleteItem, orders }) {
                 </button>
 
                 {cartItems.map((item, index) => (
-                  <div key={index}>
+                  <div key={item.id}>
                     <input
                       type="hidden"
                       name={`product_${index + 1}_name`}
                       value={item.name}
+                    />
+                    <input
+                      type="hidden"
+                      name={`category`}
+                      value={item.category}
                     />
                     <input
                       type="hidden"
