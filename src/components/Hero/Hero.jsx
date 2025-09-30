@@ -52,7 +52,6 @@ export default function Hero() {
   return (
     <motion.div
       className="hero-container"
-      id="home"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
@@ -100,7 +99,7 @@ export default function Hero() {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               >
-                <img src={item.img} className={`img-${item.id}`}/>
+                <img src={item.img} className={`img-${item.id}`} alt="HeroImg"/>
               </motion.div>
             </div>
           ))}

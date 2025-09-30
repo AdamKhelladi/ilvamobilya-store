@@ -33,7 +33,7 @@ export default function Products({ addToCart }) {
               handleClickCategory(item.name);
             }}
           >
-            <img src={item.img} />
+            <img src={item.img} alt="imame"/>
             <h3>{item.name}</h3>
           </div>
         ))}

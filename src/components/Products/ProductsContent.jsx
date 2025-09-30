@@ -3,10 +3,9 @@ import "./Products.css";
 import { FaStar } from "react-icons/fa6";
 import { MdOutlineReadMore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 
 export default function ProductsContent({ contentData, addToCart }) {
