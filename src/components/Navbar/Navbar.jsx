@@ -15,7 +15,7 @@ export default function Navbar({ handleShowMenu, orders }) {
   }
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" id="home">
       <div className="container">
         <div className="logo-name">
           <a href="#home">

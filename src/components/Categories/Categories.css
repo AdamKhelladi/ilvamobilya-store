@@ -1,7 +1,7 @@
 .categories-container {
   /* height: 100vh; */
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@
   .categories-container {
     height: 100%;
     padding-top: 50px;
-    margin-top: 0;
+    margin-top: 50px;
   }
   .categories-container .items {
     display: flex;

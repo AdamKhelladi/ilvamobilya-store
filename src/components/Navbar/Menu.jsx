@@ -5,9 +5,9 @@ import { IoCloseSharp } from "react-icons/io5";
 export default function Menu({ handleShowMenu }) {
   const MenuLinks = [
     { id: 1, name: "Home", link: "/#home" },
-    { id: 3, name: "About Us", link: "/#about" },
-    { id: 4, name: "Services", link: "/#services" },
-    { id: 2, name: "Categories", link: "/#categories" },
+    { id: 2, name: "About Us", link: "/#about" },
+    { id: 3, name: "Services", link: "/#services" },
+    { id: 4, name: "Categories", link: "/#categories" },
     { id: 5, name: "Products", link: "/#products" },
     { id: 6, name: "Client Satisfaction", link: "/#testimonials" },
   ];
