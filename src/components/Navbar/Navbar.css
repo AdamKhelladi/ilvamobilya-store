@@ -99,9 +99,9 @@
   height: 100%;
   top: 0;
   position: absolute;
-  background: linear-gradient(135deg, #000000b9);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  background: linear-gradient(135deg, #000000d2);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
 }
 
 .menu {
