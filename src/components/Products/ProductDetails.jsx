@@ -53,7 +53,7 @@ export default function ProductDetails({ addToCart }) {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          🢃 Click to see more details on Facebook 🢃
+          ⬇️ Click to see more details on Facebook ⬇️
         </motion.p>
 
         <motion.div
