@@ -50,6 +50,7 @@
     width: 970px;
   }
 }
+
 /* Large */
 @media (min-width: 1200px) {
   .container {
